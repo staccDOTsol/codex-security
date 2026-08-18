@@ -17,6 +17,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { rotateImage } from './cards.mjs';
+import { comparisonCard } from './render.mjs';
 
 const PROXY = process.env.OPENZOO_PROXY || 'http://127.0.0.1:8402';
 const args = process.argv.slice(2);
@@ -145,31 +146,16 @@ if (findings.length) {
 
 fs.writeFileSync(path.join(repoRoot, 'STATS.md'), md.join('\n') + '\n');
 
-// ── stats.svg ─────────────────────────────────────────────────────────────
-// Hand-written SVG rather than a badge service: no third party, no rate limit,
-// and the numbers are ours. Colours are inline because GitHub strips <style>.
-const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
-const rows = [
-  ['paid calls', num(session?.paidCalls), '#e6e6e6'],
-  ['spent', usd(spent), '#e6e6e6'],
-  ['buying direct', usd(direct), '#ff9955'],
-  ['multiple', mult == null ? '—' : `${mult.toFixed(2)}x`, '#b8f22d'],
-  ['repos scanned', `${done} / ${done + failed}`, '#e6e6e6'],
-  ['findings', String(findings.length), '#b8f22d'],
-];
-const H = 34 + rows.length * 22 + 14;
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="${H}" role="img" aria-label="openzoo run stats">
-  <rect width="340" height="${H}" rx="10" fill="#0e0e11"/>
-  <rect width="340" height="${H}" rx="10" fill="none" stroke="#33333d"/>
-  <text x="16" y="24" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#b8f22d">OPENZOO · CODEX SECURITY RUN</text>
-${rows.map(([k, v, c], i) => {
-  const y = 46 + i * 22;
-  return `  <text x="16" y="${y}" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8a8a95">${esc(k)}</text>
-  <text x="324" y="${y}" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="${c}">${esc(v)}</text>`;
-}).join('\n')}
-</svg>
-`;
-// Rotated to a fresh filename each publish; see rotateImage.
+// ── card ─────────────────────────────────────────────────────────────────
+const svg = comparisonCard({
+  title: 'OPENZOO · THIS REPO\u2019S SECURITY SCAN',
+  paid: spent, direct, cogs,
+  foot: [
+    ['paid calls', num(session?.paidCalls)],
+    ['repos scanned', `${done} / ${done + failed}`],
+    ['findings', String(findings.length)],
+  ],
+});
 const imgName = rotateImage(repoRoot, 'run', svg);
 
 const busted = true; // README link rewritten by rotateImage

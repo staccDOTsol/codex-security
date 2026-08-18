@@ -3,8 +3,8 @@
 > ### Running this through [openzoo](https://openzoo.fun) instead of an OpenAI account
 >
 > <table><tr>
-> <td><img src="openzoo/cards/run-1787033352913.svg" width="330" alt="this repo's codex-security run"></td>
-> <td><img src="openzoo/cards/net-1787033342994.svg" width="330" alt="openzoo network today"></td>
+> <td><img src="openzoo/cards/run-1787033475874.svg" width="420" alt="this repo's codex-security run"></td>
+> <td><img src="openzoo/cards/net-1787033469133.svg" width="420" alt="openzoo network today"></td>
 > </tr></table>
 >
 > Pay per call from a wallet. **No OpenAI key, no org TPM ceiling, and no "you

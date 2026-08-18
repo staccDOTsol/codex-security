@@ -16,6 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { rotateImage } from './cards.mjs';
+import { comparisonCard } from './render.mjs';
 
 const API = process.env.OPENZOO_STATS_URL || 'https://x402-tokens.fly.dev/v1/stats';
 const repoRoot = path.resolve(new URL('..', import.meta.url).pathname);
@@ -98,30 +99,17 @@ if (d.coverage) {
 
 fs.writeFileSync(path.join(repoRoot, 'AGGREGATE.md'), md.join('\n') + '\n');
 
-// ── aggregate.svg ─────────────────────────────────────────────────────────
-const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
-const rows = [
-  ['calls today', num(t.calls), '#e6e6e6'],
-  ['paid', num(t.paid), '#e6e6e6'],
-  ['revenue', usd(t.usdPaid), '#e6e6e6'],
-  ['margin', pct(t.marginPct), '#b8f22d'],
-  ['direct would be', usd(t.usdDirect), '#ff9955'],
-  ['leCore saving', t.lecoreSavingX == null ? '—' : `${t.lecoreSavingX}x`, '#b8f22d'],
-  ['payers', num(t.distinctPayers), '#8a8a95'],
-];
-const H = 34 + rows.length * 22 + 14;
-const aggSvg =
-`<svg xmlns="http://www.w3.org/2000/svg" width="340" height="${H}" role="img" aria-label="openzoo network aggregate">
-  <rect width="340" height="${H}" rx="10" fill="#0e0e11"/>
-  <rect width="340" height="${H}" rx="10" fill="none" stroke="#33333d"/>
-  <text x="16" y="24" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#ff9955">OPENZOO · NETWORK TODAY</text>
-${rows.map(([k, v, c], i) => {
-  const y = 46 + i * 22;
-  return `  <text x="16" y="${y}" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#8a8a95">${esc(k)}</text>
-  <text x="324" y="${y}" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="${c}">${esc(v)}</text>`;
-}).join('\n')}
-</svg>
-`;
+// ── card ─────────────────────────────────────────────────────────────────
+const aggSvg = comparisonCard({
+  title: 'OPENZOO \u00b7 EVERY DEVELOPER, TODAY',
+  titleColour: '#ff9955',
+  paid: t.usdPaid, direct: t.usdDirect, cogs: t.usdCogs,
+  foot: [
+    ['calls', num(t.calls)],
+    ['paid calls', num(t.paid)],
+    ['developers paying', num(t.distinctPayers)],
+  ],
+});
 const imgName = rotateImage(repoRoot, 'net', aggSvg);
 
 const busted = true; // README link rewritten by rotateImage
