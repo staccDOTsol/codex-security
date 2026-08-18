@@ -3,7 +3,7 @@
 > ### Running this through [openzoo](https://openzoo.fun) instead of an OpenAI account
 >
 > <table><tr>
-> <td><img src="openzoo/stats.svg?v=1787032956379" width="330" alt="this repo's codex-security run through openzoo"></td>
+> <td><img src="openzoo/stats.svg?v=1787032984195" width="330" alt="this repo's codex-security run through openzoo"></td>
 > <td><img src="openzoo/aggregate.svg?v=1787032956020" width="330" alt="openzoo network aggregate today"></td>
 > </tr></table>
 >
