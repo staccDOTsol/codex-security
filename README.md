@@ -7,7 +7,7 @@
 > [npm](https://www.npmjs.com/package/openzoo) · [setup for this repo](openzoo/README.md)
 >
 > <table><tr>
-> <td><img src="openzoo/cards/run-1787037801492.svg" width="420" alt="this repo's codex-security run"></td>
+> <td><img src="openzoo/cards/run-1787037924152.svg" width="420" alt="this repo's codex-security run"></td>
 > <td><img src="openzoo/cards/net-1787033469133.svg" width="420" alt="openzoo network today"></td>
 > </tr></table>
 >
@@ -43,7 +43,7 @@
 
 <!-- openzoo:findings -->
 
-**5 of 34 repositories scanned** · 4 clean · 1 with findings · 2 failed
+**7 of 34 repositories scanned** · 6 clean · 1 with findings · 2 failed
 
 **1 finding** across 1 repository, scanned through openzoo. Raw scanner output — leads, not triaged results.
 
