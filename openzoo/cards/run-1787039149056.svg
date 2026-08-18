@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="377" role="img" aria-label="OPENZOO · THIS REPO’S SECURITY SCAN">
+  <rect width="420" height="377" rx="10" fill="#0e0e11"/>
+  <rect width="420" height="377" rx="10" fill="none" stroke="#33333d"/>
+
+  <text x="16" y="26" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#b8f22d" letter-spacing="0.06em">OPENZOO · THIS REPO’S SECURITY SCAN</text>
+
+  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" font-weight="600" fill="#b8f22d">saved $143.25</text>
+  <text x="404" y="62" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" font-weight="600" fill="#b8f22d">2.85x</text>
+  <text x="16" y="84" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.5" fill="#8a8a95">vs buying the same tokens direct</text>
+
+  <rect x="16" y="108" width="136" height="18" rx="3" fill="#b8f22d" opacity="0.85"/>
+  <text x="22" y="121" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#0e0e11" font-weight="600">dev spent</text>
+  <text x="404" y="121" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#e6e6e6">$77.35</text>
+
+  <rect x="16" y="134" width="388" height="18" rx="3" fill="#ff9955" opacity="0.85"/>
+  <text x="22" y="147" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#0e0e11" font-weight="600">buying direct</text>
+  <text x="404" y="147" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#ff9955">$220.60</text>
+
+  <text x="16" y="180" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">protocol&#8217;s cost (cogs)</text>
+  <text x="404" y="180" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#e6e6e6">$51.49</text>
+
+  <line x1="16" y1="190" x2="404" y2="190" stroke="#33333d"/>
+  <text x="16" y="202" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">paid calls</text>
+  <text x="404" y="202" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">730</text>
+  <text x="16" y="221" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">repos scanned</text>
+  <text x="404" y="221" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">9 / 34</text>
+  <text x="16" y="240" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">findings</text>
+  <text x="404" y="240" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">3</text>
+  <g transform="translate(0, 255)">
+  <path d="M16.0,78.0 L23.3,78.0 L30.6,77.0 L38.0,76.2 L45.3,75.0 L52.6,74.9 L59.9,73.9 L67.2,77.7 L74.6,77.0 L81.9,76.1 L89.2,75.3 L96.5,74.1 L103.8,72.7 L111.2,71.4 L118.5,69.8 L125.8,67.9 L133.1,66.3 L140.5,64.3 L147.8,62.8 L155.1,61.1 L162.4,58.6 L169.7,55.9 L177.1,53.9 L184.4,52.6 L191.7,51.0 L199.0,49.9 L206.3,49.3 L213.7,46.4 L221.0,44.3 L228.3,42.1 L235.6,40.1 L242.9,38.8 L250.3,37.8 L257.6,36.0 L264.9,34.0 L272.2,31.8 L279.5,29.5 L286.9,28.6 L294.2,27.2 L301.5,27.1 L308.8,26.8 L316.2,24.9 L323.5,22.5 L330.8,20.0 L338.1,18.2 L345.4,16.6 L352.8,15.2 L360.1,13.3 L367.4,12.0 L374.7,12.0 L382.0,12.0 L389.4,12.0 L396.7,12.0 L404.0,12.0 L404.0,54.9 L396.7,54.9 L389.4,54.9 L382.0,54.9 L374.7,54.9 L367.4,54.9 L360.1,55.5 L352.8,56.2 L345.4,56.8 L338.1,57.4 L330.8,58.0 L323.5,58.7 L316.2,59.4 L308.8,60.0 L301.5,60.1 L294.2,60.1 L286.9,60.5 L279.5,60.8 L272.2,61.5 L264.9,62.2 L257.6,62.9 L250.3,63.6 L242.9,64.0 L235.6,64.5 L228.3,65.4 L221.0,66.3 L213.7,67.0 L206.3,67.7 L199.0,67.9 L191.7,68.2 L184.4,68.6 L177.1,68.9 L169.7,69.4 L162.4,70.0 L155.1,70.6 L147.8,71.1 L140.5,71.4 L133.1,72.0 L125.8,72.6 L118.5,73.3 L111.2,73.9 L103.8,74.5 L96.5,75.2 L89.2,75.9 L81.9,76.5 L74.6,77.2 L67.2,77.8 L59.9,75.5 L52.6,76.0 L45.3,76.1 L38.0,77.0 L30.6,77.7 L23.3,78.0 L16.0,78.0 Z" fill="#b8f22d" opacity="0.13"/>
+  <path d="M16.0,78.0 L23.3,78.0 L30.6,77.0 L38.0,76.2 L45.3,75.0 L52.6,74.9 L59.9,73.9 L67.2,77.7 L74.6,77.0 L81.9,76.1 L89.2,75.3 L96.5,74.1 L103.8,72.7 L111.2,71.4 L118.5,69.8 L125.8,67.9 L133.1,66.3 L140.5,64.3 L147.8,62.8 L155.1,61.1 L162.4,58.6 L169.7,55.9 L177.1,53.9 L184.4,52.6 L191.7,51.0 L199.0,49.9 L206.3,49.3 L213.7,46.4 L221.0,44.3 L228.3,42.1 L235.6,40.1 L242.9,38.8 L250.3,37.8 L257.6,36.0 L264.9,34.0 L272.2,31.8 L279.5,29.5 L286.9,28.6 L294.2,27.2 L301.5,27.1 L308.8,26.8 L316.2,24.9 L323.5,22.5 L330.8,20.0 L338.1,18.2 L345.4,16.6 L352.8,15.2 L360.1,13.3 L367.4,12.0 L374.7,12.0 L382.0,12.0 L389.4,12.0 L396.7,12.0 L404.0,12.0" fill="none" stroke="#ff9955" stroke-width="1.6"/>
+  <path d="M16.0,78.0 L23.3,78.0 L30.6,77.7 L38.0,77.0 L45.3,76.1 L52.6,76.0 L59.9,75.5 L67.2,77.8 L74.6,77.2 L81.9,76.5 L89.2,75.9 L96.5,75.2 L103.8,74.5 L111.2,73.9 L118.5,73.3 L125.8,72.6 L133.1,72.0 L140.5,71.4 L147.8,71.1 L155.1,70.6 L162.4,70.0 L169.7,69.4 L177.1,68.9 L184.4,68.6 L191.7,68.2 L199.0,67.9 L206.3,67.7 L213.7,67.0 L221.0,66.3 L228.3,65.4 L235.6,64.5 L242.9,64.0 L250.3,63.6 L257.6,62.9 L264.9,62.2 L272.2,61.5 L279.5,60.8 L286.9,60.5 L294.2,60.1 L301.5,60.1 L308.8,60.0 L316.2,59.4 L323.5,58.7 L330.8,58.0 L338.1,57.4 L345.4,56.8 L352.8,56.2 L360.1,55.5 L367.4,54.9 L374.7,54.9 L382.0,54.9 L389.4,54.9 L396.7,54.9 L404.0,54.9" fill="none" stroke="#b8f22d" stroke-width="1.6"/>
+  <text x="16" y="95" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" fill="#8a8a95">54 samples · the shaded gap is what leCore saved</text>
+  </g>
+</svg>
