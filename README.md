@@ -26,7 +26,10 @@
 > ([openzoo/responses-shim.js](openzoo/responses-shim.js)). Every one of them
 > fails with a message that points somewhere else.
 >
-> Live numbers from our own run: **[STATS.md](STATS.md)**.
+> Live numbers from our own run: **[STATS.md](STATS.md)** · whole-network
+> aggregate: **[AGGREGATE.md](AGGREGATE.md)**.
+>
+> <img src="openzoo/aggregate.svg" alt="openzoo network aggregate" width="300">
 
 `@openai/codex-security` is a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code.
 
