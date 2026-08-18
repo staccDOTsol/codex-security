@@ -7,29 +7,32 @@ because GitHub's image proxy caches a static README URL indefinitely._
 
 | metric | value |
 | --- | --- |
-| paid calls | 708 |
-| spent | $75.04 |
-| our cost (cogs) | $49.95 |
-| buying direct would be | $216.21 |
-| multiple | 2.88x |
-| prepaid credit left | $344.26 |
+| paid calls | 730 |
+| spent | $77.35 |
+| our cost (cogs) | $51.49 |
+| buying direct would be | $220.60 |
+| multiple | 2.85x |
+| prepaid credit left | $342.09 |
 
 ## Scan
 
 | metric | value |
 | --- | --- |
-| repos completed | 4 / 34 |
+| repos completed | 5 / 34 |
 | repos failed | 2 |
-| findings | 1 |
+| findings | 3 |
 
 ### By severity
 
 | severity | count |
 | --- | --- |
-| medium | 1 |
+| high | 1 |
+| medium | 2 |
 
 ### Findings
 
 | repo | severity | score | finding | file |
 | --- | --- | --- | --- | --- |
+| 012-pump-fun | high | 8.1 | Unchecked CPI target can inherit signer authority and drain user token accounts | docs/CPI_README.md |
 | 001-sanctum-validator-lsts | medium | 6.5 | Mixed stake deposits apply the stake referral rate to SOL deposit fees | stake-pool/program/src/processor.rs |
+| 012-pump-fun | medium | 6.5 | Published sell examples disable meaningful minimum-output protection | docs/instructions/SELL.md |

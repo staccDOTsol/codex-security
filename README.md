@@ -7,7 +7,7 @@
 > [npm](https://www.npmjs.com/package/openzoo) · [setup for this repo](openzoo/README.md)
 >
 > <table><tr>
-> <td><img src="openzoo/cards/run-1787038414231.svg" width="420" alt="this repo's codex-security run"></td>
+> <td><img src="openzoo/cards/run-1787038536566.svg" width="420" alt="this repo's codex-security run"></td>
 > <td><img src="openzoo/cards/net-1787033469133.svg" width="420" alt="openzoo network today"></td>
 > </tr></table>
 >
@@ -43,13 +43,15 @@
 
 <!-- openzoo:findings -->
 
-**8 of 34 repositories scanned** · 7 clean · 1 with findings · 2 failed
+**9 of 34 repositories scanned** · 7 clean · 2 with findings · 2 failed
 
-**1 finding** across 1 repository, scanned through openzoo. Raw scanner output — leads, not triaged results.
+**3 findings** across 2 repositories, scanned through openzoo. Raw scanner output — leads, not triaged results.
 
 | severity | score | repository | finding | file |
 | --- | --- | --- | --- | --- |
+| `high` | 8.1 | 012-pump-fun | Unchecked CPI target can inherit signer authority and drain user token accounts | `docs/CPI_README.md` |
 | `medium` | 6.5 | 001-sanctum-validator-lsts | Mixed stake deposits apply the stake referral rate to SOL deposit fees | `stake-pool/program/src/processor.rs` |
+| `medium` | 6.5 | 012-pump-fun | Published sell examples disable meaningful minimum-output protection | `docs/instructions/SELL.md` |
 
 <!-- /openzoo:findings -->
 

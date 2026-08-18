@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "012-pump-fun",
+    "severity": "high",
+    "score": 8.1,
+    "title": "Unchecked CPI target can inherit signer authority and drain user token accounts",
+    "file": "docs/CPI_README.md",
+    "locations": 3,
+    "confidence": "high"
+  },
+  {
+    "repo": "012-pump-fun",
+    "severity": "medium",
+    "score": 6.5,
+    "title": "Published sell examples disable meaningful minimum-output protection",
+    "file": "docs/instructions/SELL.md",
+    "locations": 4,
+    "confidence": "high"
+  }
+]
