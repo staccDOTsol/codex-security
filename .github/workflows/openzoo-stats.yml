@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name  "openzoo-stats"
           git config user.email "stats@openzoo.fun"
-          git add AGGREGATE.md openzoo/aggregate.svg README.md
+          git add -A AGGREGATE.md openzoo/cards README.md
           # `diff --cached --quiet` exits 1 when something IS staged, so a
           # no-change run must not fail the job.
           if git diff --cached --quiet; then

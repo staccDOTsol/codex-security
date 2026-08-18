@@ -15,7 +15,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { bust } from './bust.mjs';
+import { rotateImage } from './cards.mjs';
 
 const API = process.env.OPENZOO_STATS_URL || 'https://x402-tokens.fly.dev/v1/stats';
 const repoRoot = path.resolve(new URL('..', import.meta.url).pathname);
@@ -110,7 +110,7 @@ const rows = [
   ['payers', num(t.distinctPayers), '#8a8a95'],
 ];
 const H = 34 + rows.length * 22 + 14;
-fs.writeFileSync(path.join(repoRoot, 'openzoo', 'aggregate.svg'),
+const aggSvg =
 `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="${H}" role="img" aria-label="openzoo network aggregate">
   <rect width="340" height="${H}" rx="10" fill="#0e0e11"/>
   <rect width="340" height="${H}" rx="10" fill="none" stroke="#33333d"/>
@@ -121,13 +121,13 @@ ${rows.map(([k, v, c], i) => {
   <text x="324" y="${y}" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="${c}">${esc(v)}</text>`;
 }).join('\n')}
 </svg>
-`);
+`;
+const imgName = rotateImage(repoRoot, 'net', aggSvg);
 
-// New bytes are not enough — camo caches the README's <img> URL.
-const busted = bust(repoRoot, 'aggregate.svg');
+const busted = true; // README link rewritten by rotateImage
 
 console.log(JSON.stringify({
-  wrote: ['AGGREGATE.md', 'openzoo/aggregate.svg', ...(busted ? ['README.md'] : [])],
+  wrote: ['AGGREGATE.md', `openzoo/cards/${imgName}`, ...(busted ? ['README.md'] : [])],
   day: t.day, calls: t.calls, paid: t.paid,
   usdPaid: t.usdPaid, marginPct: t.marginPct, lecoreSavingX: t.lecoreSavingX,
 }, null, 2));

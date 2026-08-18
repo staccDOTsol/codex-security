@@ -20,7 +20,7 @@ while true; do
   # exit 78 is the publisher saying "nothing to publish" — a normal state early
   # in a run, not a reason to stop the loop or commit blanks.
   if node openzoo/publish-stats.mjs --out-dir "$OUT_DIR"; then
-    git add STATS.md openzoo/stats.svg README.md
+    git add -A STATS.md openzoo/cards README.md
     # --quiet exits 1 when something IS staged, so invert it rather than let
     # `set -e` kill the loop on a no-change pass.
     if ! git diff --cached --quiet; then

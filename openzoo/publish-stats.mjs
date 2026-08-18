@@ -16,7 +16,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { bust } from './bust.mjs';
+import { rotateImage } from './cards.mjs';
 
 const PROXY = process.env.OPENZOO_PROXY || 'http://127.0.0.1:8402';
 const args = process.argv.slice(2);
@@ -169,13 +169,13 @@ ${rows.map(([k, v, c], i) => {
 }).join('\n')}
 </svg>
 `;
-fs.writeFileSync(path.join(repoRoot, 'openzoo', 'stats.svg'), svg);
+// Rotated to a fresh filename each publish; see rotateImage.
+const imgName = rotateImage(repoRoot, 'run', svg);
 
-// New bytes are not enough — camo caches the README's <img> URL.
-const busted = bust(repoRoot, 'stats.svg');
+const busted = true; // README link rewritten by rotateImage
 
 console.log(JSON.stringify({
-  wrote: ['STATS.md', 'openzoo/stats.svg', ...(busted ? ['README.md'] : [])],
+  wrote: ['STATS.md', `openzoo/cards/${imgName}`, ...(busted ? ['README.md'] : [])],
   paidCalls: session?.paidCalls ?? null,
   spent, direct, multiple: mult,
   reposCompleted: done, reposFailed: failed, findings: findings.length,
