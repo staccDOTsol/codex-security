@@ -79,6 +79,16 @@ function readFindings(dir) {
 }
 
 const results = readResults(outDir);
+
+/** How many repos the run was ASKED to do. */
+function queued(dir) {
+  try {
+    const m = JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'), 'utf8'));
+    return Array.isArray(m.tasks) ? m.tasks.length : 0;
+  } catch { return 0; }
+}
+// "0 / 0" reads as "nothing to do". The denominator is the queue.
+const total = (outDir && queued(outDir)) || results.length;
 const findings = readFindings(outDir);
 
 // REFUSE TO PUBLISH NOTHING.
@@ -127,7 +137,7 @@ const md = [
   '',
   '| metric | value |',
   '| --- | --- |',
-  `| repos completed | ${done} |`,
+  `| repos completed | ${done} / ${total} |`,
   `| repos failed | ${failed} |`,
   `| findings | ${findings.length} |`,
   '',
@@ -147,6 +157,23 @@ if (findings.length) {
 
 fs.writeFileSync(path.join(repoRoot, 'STATS.md'), md.join('\n') + '\n');
 
+// PUBLISH THE FINDINGS THEMSELVES, not just a count. A security run whose
+// output never leaves the scanning laptop is a cost demo wearing a security
+// costume.
+const outRoot = path.join(repoRoot, 'openzoo', 'findings');
+if (findings.length) {
+  fs.mkdirSync(outRoot, { recursive: true });
+  const byRepo = {};
+  for (const f of findings) (byRepo[f.repo] ||= []).push(f);
+  for (const [repo, list] of Object.entries(byRepo)) {
+    fs.writeFileSync(path.join(outRoot, `${repo}.json`), JSON.stringify(list, null, 2) + '\n');
+  }
+  fs.writeFileSync(path.join(outRoot, 'README.md'),
+    ['# Findings', '', `Published by \`openzoo/publish-stats.mjs\` from a live scan.`,
+     `${findings.length} findings across ${Object.keys(byRepo).length} repositories.`, '',
+     'These are raw scanner output, not triaged or verified. Treat them as leads.', ''].join('\n'));
+}
+
 // One sample per publish. The shape of the run is the argument; a single
 // snapshot cannot show spent and direct pulling apart.
 history.append(repoRoot, {
@@ -162,7 +189,7 @@ const svg = comparisonCard({
   paid: spent, direct, cogs,
   foot: [
     ['paid calls', num(session?.paidCalls)],
-    ['repos scanned', `${done} / ${done + failed}`],
+    ['repos scanned', `${done} / ${total}`],
     ['findings', String(findings.length)],
   ],
   chart: series(points),

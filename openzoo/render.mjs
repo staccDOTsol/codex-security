@@ -40,7 +40,7 @@ export function comparisonCard({ title, titleColour = GOOD, paid, direct, cogs, 
   const barH = 26;
   const gap = 12;
   const footTop = barTop + barH * 2 + gap + 30;
-  const chartH = chart ? 92 : 0;
+  const chartH = chart ? 104 : 0;
   const H = footTop + foot.length * 19 + chartH + 14;
 
   // Bars share ONE scale — that is the whole point. Scaling each to its own
@@ -103,14 +103,16 @@ ${chart ? `  <g transform="translate(0, ${footTop + foot.length * 19 - 4})">\n${
  * curve twice and hide the very gap the chart exists to show. The filled area
  * between them IS the saving, which is why it is drawn rather than described.
  */
-export function series(points, { w = 388, h = 84 } = {}) {
+export function series(points, { w = 388, h = 96 } = {}) {
   const pts = (points || []).filter((p) => p && typeof p.spent === 'number' && typeof p.direct === 'number');
   if (pts.length < 2) {
     return `  <text x="16" y="${h / 2}" font-family="${MONO}" font-size="10.5" fill="${DIM}">collecting — the chart needs a few minutes of run</text>`;
   }
   const max = Math.max(...pts.map((p) => Math.max(p.spent, p.direct)), 0.0001);
   const x = (i) => 16 + (i / (pts.length - 1)) * w;
-  const y = (v) => h - 6 - (v / max) * (h - 16);
+  // Reserve the bottom 16px for the caption; plotting into it drew the
+  // curve through the text.
+  const y = (v) => h - 18 - (v / max) * (h - 30);
 
   const path = (key) => pts.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(p[key]).toFixed(1)}`).join(' ');
   // The gap, as a closed shape: direct along the top, back along spent.
