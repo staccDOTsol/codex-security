@@ -1,0 +1,40 @@
+name: openzoo stats
+
+# Regenerates STATS.md and openzoo/stats.svg and commits them.
+#
+# COMMITTED, NOT SERVED: GitHub proxies README images through camo, which caches
+# by URL — a live endpoint behind a static URL renders once and then never
+# changes. Changing the repository is what makes a README update.
+#
+# The proxy is not reachable from a hosted runner, so this is useful on a
+# self-hosted runner beside the scan, or run the script locally and push.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Regenerate stats
+        env:
+          OPENZOO_PROXY: ${{ vars.OPENZOO_PROXY }}
+        run: node openzoo/publish-stats.mjs --out-dir "${{ vars.SCAN_OUTPUT_DIR }}"
+      - name: Commit if changed
+        run: |
+          git config user.name  "openzoo-stats"
+          git config user.email "stats@openzoo.fun"
+          git add STATS.md openzoo/stats.svg
+          # `diff --cached --quiet` exits 1 when there IS something staged, so a
+          # no-op run must not fail the workflow.
+          git diff --cached --quiet || git commit -m "stats: refresh live run numbers"
+          git push

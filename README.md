@@ -1,5 +1,33 @@
 # Codex Security
 
+> ### Running this through [openzoo](https://openzoo.fun) instead of an OpenAI account
+>
+> <img src="openzoo/stats.svg" alt="live openzoo run stats" align="right" width="300">
+>
+> Pay per call from a wallet. **No OpenAI key, no org TPM ceiling, and no "you
+> have no credits remaining" at repo 9 of 34** — which is exactly where our first
+> bulk scan of 34 Solana programs died.
+>
+> ```bash
+> npx openzoo                                   # proxy on localhost:8402/v1
+> export OPENAI_API_KEY=sk-openzoo OPENZOO_KEY=sk-openzoo
+> codex-security scan . \
+>   --codex 'model_provider="openzoo"' \
+>   --codex 'model_providers.openzoo={name="openzoo",base_url="http://127.0.0.1:8402/v1",env_key="OPENZOO_KEY",wire_api="responses"}'
+> ```
+>
+> Both env vars are required and are **not** interchangeable — the CLI reads
+> `OPENAI_API_KEY` to select api-key auth, then strips it from the runtime it
+> spawns.
+>
+> Codex Security does not speak plain chat completions, and it does not put its
+> tools in the `tools` parameter. **[openzoo/README.md](openzoo/README.md)**
+> documents the four failure modes and ships a working translation shim
+> ([openzoo/responses-shim.js](openzoo/responses-shim.js)). Every one of them
+> fails with a message that points somewhere else.
+>
+> Live numbers from our own run: **[STATS.md](STATS.md)**.
+
 `@openai/codex-security` is a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code.
 
 **See the [Codex Security documentation](https://learn.chatgpt.com/docs/security/cli)** for more details.
