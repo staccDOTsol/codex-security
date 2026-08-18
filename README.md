@@ -2,28 +2,10 @@
 
 > ### Running this through [openzoo](https://openzoo.fun) instead of an OpenAI account
 >
-> <!-- openzoo:run -->
-> | this repo's run | |
-> | --- | --: |
-> | paid calls | 276 |
-> | spent | $45.74 |
-> | buying direct would be | $63.16 |
-> | **multiple** | **1.38x** |
-> | repos scanned | 0 / 1 |
-> | findings | 0 |
-<!-- /openzoo:run -->
->
-> <!-- openzoo:net -->
-> | openzoo network, today | |
-> | --- | --: |
-> | calls | 19,903 |
-> | paid | 2,281 |
-> | revenue | $181.97 |
-> | margin | 55.9% |
-> | buying direct would be | $1,038.75 |
-> | **leCore saving** | **5.71x** |
-> | payers | 10 |
-<!-- /openzoo:net -->
+> <table><tr>
+> <td><img src="openzoo/cards/run-1787033352913.svg" width="330" alt="this repo's codex-security run"></td>
+> <td><img src="openzoo/cards/net-1787033342994.svg" width="330" alt="openzoo network today"></td>
+> </tr></table>
 >
 > Pay per call from a wallet. **No OpenAI key, no org TPM ceiling, and no "you
 > have no credits remaining" at repo 9 of 34** — which is exactly where our first
