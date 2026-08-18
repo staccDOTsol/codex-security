@@ -42,3 +42,29 @@ export function rotateImage(repoRoot, id, svg, keep = 2) {
   }
   return name;
 }
+
+/**
+ * Replace the content between `<!-- openzoo:<id> -->` markers in README.md.
+ *
+ * Refuses when the pair is missing or inverted rather than appending: a
+ * half-edited README would otherwise gain a duplicate block on every publish,
+ * every two minutes, forever.
+ */
+export function writeBlock(repoRoot, id, lines) {
+  const readme = path.join(repoRoot, 'README.md');
+  if (!fs.existsSync(readme)) return false;
+  const src = fs.readFileSync(readme, 'utf8');
+  const open = `<!-- openzoo:${id} -->`;
+  const close = `<!-- /openzoo:${id} -->`;
+  const i = src.indexOf(open);
+  const j = src.indexOf(close);
+  if (i === -1 || j === -1 || j < i) return false;
+  // Preserve whatever prefix the closing marker sits behind, so a block inside
+  // a blockquote does not lose its '> ' and break the quote.
+  const lineStart = src.lastIndexOf('\n', j) + 1;
+  const prefix = src.slice(lineStart, j);
+  const next = src.slice(0, i + open.length) + '\n' + lines.join('\n') + '\n' + prefix + src.slice(j);
+  if (next === src) return false;
+  fs.writeFileSync(readme, next);
+  return true;
+}

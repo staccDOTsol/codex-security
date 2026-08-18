@@ -7,7 +7,7 @@
 > [npm](https://www.npmjs.com/package/openzoo) · [setup for this repo](openzoo/README.md)
 >
 > <table><tr>
-> <td><img src="openzoo/cards/run-1787036129674.svg" width="420" alt="this repo's codex-security run"></td>
+> <td><img src="openzoo/cards/run-1787036160739.svg" width="420" alt="this repo's codex-security run"></td>
 > <td><img src="openzoo/cards/net-1787033469133.svg" width="420" alt="openzoo network today"></td>
 > </tr></table>
 >
@@ -38,6 +38,18 @@
 
 
 `@openai/codex-security` is a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code.
+
+## Findings from this scan
+
+<!-- openzoo:findings -->
+
+**1 finding** across 1 repository, scanned through openzoo. Raw scanner output — leads, not triaged results.
+
+| severity | score | repository | finding | file |
+| --- | --- | --- | --- | --- |
+| `medium` | 6.5 | 001-sanctum-validator-lsts | Mixed stake deposits apply the stake referral rate to SOL deposit fees | `stake-pool/program/src/processor.rs` |
+
+<!-- /openzoo:findings -->
 
 **See the [Codex Security documentation](https://learn.chatgpt.com/docs/security/cli)** for more details.
 

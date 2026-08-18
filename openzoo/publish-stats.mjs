@@ -16,7 +16,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { rotateImage } from './cards.mjs';
+import { rotateImage, writeBlock } from './cards.mjs';
 import { comparisonCard, series } from './render.mjs';
 import * as history from './history.mjs';
 
@@ -215,6 +215,32 @@ const svg = comparisonCard({
   chart: series(points),
 });
 const imgName = rotateImage(repoRoot, 'run', svg);
+
+// ITEMISE THE FINDINGS ON THE README ITSELF. A count is a claim; the table is
+// the evidence, and it is the only part of this a security reader cares about.
+const sevRank = { critical: 0, high: 1, medium: 2, low: 3, unknown: 4 };
+const block = findings.length
+  ? [
+      '',
+      `**${findings.length} finding${findings.length === 1 ? '' : 's'}** across ` +
+        `${new Set(findings.map((f) => f.repo)).size} repositor` +
+        `${new Set(findings.map((f) => f.repo)).size === 1 ? 'y' : 'ies'}, ` +
+        `scanned through openzoo. Raw scanner output — leads, not triaged results.`,
+      '',
+      '| severity | score | repository | finding | file |',
+      '| --- | --- | --- | --- | --- |',
+      ...[...findings]
+        .sort((a, b) => (sevRank[a.severity] ?? 9) - (sevRank[b.severity] ?? 9) || (b.score ?? 0) - (a.score ?? 0))
+        .slice(0, 40)
+        .map((f) => {
+          const cell = (v) => String(v ?? '').replace(/\|/g, '\\|').slice(0, 90);
+          return `| \`${cell(f.severity)}\` | ${f.score ?? '—'} | ${cell(f.repo)} | ${cell(f.title)} | \`${cell(f.file)}\` |`;
+        }),
+      ...(findings.length > 40 ? ['', `_${findings.length - 40} more in [openzoo/findings](openzoo/findings)._`] : []),
+      '',
+    ]
+  : ['', '_No findings yet — the scan is still running. This table populates itself._', ''];
+writeBlock(repoRoot, 'findings', block);
 
 const busted = true; // README link rewritten by rotateImage
 
