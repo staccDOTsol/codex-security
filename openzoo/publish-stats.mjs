@@ -16,6 +16,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { bust } from './bust.mjs';
 
 const PROXY = process.env.OPENZOO_PROXY || 'http://127.0.0.1:8402';
 const args = process.argv.slice(2);
@@ -170,8 +171,11 @@ ${rows.map(([k, v, c], i) => {
 `;
 fs.writeFileSync(path.join(repoRoot, 'openzoo', 'stats.svg'), svg);
 
+// New bytes are not enough — camo caches the README's <img> URL.
+const busted = bust(repoRoot, 'stats.svg');
+
 console.log(JSON.stringify({
-  wrote: ['STATS.md', 'openzoo/stats.svg'],
+  wrote: ['STATS.md', 'openzoo/stats.svg', ...(busted ? ['README.md'] : [])],
   paidCalls: session?.paidCalls ?? null,
   spent, direct, multiple: mult,
   reposCompleted: done, reposFailed: failed, findings: findings.length,

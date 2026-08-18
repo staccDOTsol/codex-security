@@ -2,7 +2,10 @@
 
 > ### Running this through [openzoo](https://openzoo.fun) instead of an OpenAI account
 >
-> <img src="openzoo/stats.svg" alt="live openzoo run stats" align="right" width="300">
+> <table><tr>
+> <td><img src="openzoo/stats.svg?v=0" width="330" alt="this repo's codex-security run through openzoo"></td>
+> <td><img src="openzoo/aggregate.svg?v=1787032705209" width="330" alt="openzoo network aggregate today"></td>
+> </tr></table>
 >
 > Pay per call from a wallet. **No OpenAI key, no org TPM ceiling, and no "you
 > have no credits remaining" at repo 9 of 34** — which is exactly where our first
@@ -28,8 +31,7 @@
 >
 > Live numbers from our own run: **[STATS.md](STATS.md)** · whole-network
 > aggregate: **[AGGREGATE.md](AGGREGATE.md)**.
->
-> <img src="openzoo/aggregate.svg" alt="openzoo network aggregate" width="300">
+
 
 `@openai/codex-security` is a CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities in your code.
 

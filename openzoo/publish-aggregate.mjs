@@ -15,6 +15,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { bust } from './bust.mjs';
 
 const API = process.env.OPENZOO_STATS_URL || 'https://x402-tokens.fly.dev/v1/stats';
 const repoRoot = path.resolve(new URL('..', import.meta.url).pathname);
@@ -122,8 +123,11 @@ ${rows.map(([k, v, c], i) => {
 </svg>
 `);
 
+// New bytes are not enough — camo caches the README's <img> URL.
+const busted = bust(repoRoot, 'aggregate.svg');
+
 console.log(JSON.stringify({
-  wrote: ['AGGREGATE.md', 'openzoo/aggregate.svg'],
+  wrote: ['AGGREGATE.md', 'openzoo/aggregate.svg', ...(busted ? ['README.md'] : [])],
   day: t.day, calls: t.calls, paid: t.paid,
   usdPaid: t.usdPaid, marginPct: t.marginPct, lecoreSavingX: t.lecoreSavingX,
 }, null, 2));
