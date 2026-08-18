@@ -7,19 +7,19 @@ because GitHub's image proxy caches a static README URL indefinitely._
 
 | metric | value |
 | --- | --- |
-| paid calls | 313 |
-| spent | $34.27 |
-| our cost (cogs) | $22.81 |
-| buying direct would be | $95.84 |
-| multiple | 2.80x |
-| prepaid credit left | $385.08 |
+| paid calls | 338 |
+| spent | $36.88 |
+| our cost (cogs) | $24.54 |
+| buying direct would be | $105.52 |
+| multiple | 2.86x |
+| prepaid credit left | $382.77 |
 
 ## Scan
 
 | metric | value |
 | --- | --- |
 | repos completed | 0 / 34 |
-| repos failed | 0 |
+| repos failed | 1 |
 | findings | 1 |
 
 ### By severity
