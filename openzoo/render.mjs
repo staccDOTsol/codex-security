@@ -34,12 +34,14 @@ export const num = (n) => (n == null ? '—' : Number(n).toLocaleString());
  * @param cogs    what the protocol paid upstream for it
  * @param foot    [[label, value], ...] small print
  */
-export function comparisonCard({ title, titleColour = GOOD, paid, direct, cogs, foot = [] }) {
+export function comparisonCard({ title, titleColour = GOOD, paid, direct, cogs, foot = [], chart = null }) {
   const W = 420;
   const barTop = 108;
   const barH = 26;
   const gap = 12;
-  const H = barTop + barH * 2 + gap + 34 + foot.length * 19 + 16;
+  const footTop = barTop + barH * 2 + gap + 30;
+  const chartH = chart ? 92 : 0;
+  const H = footTop + foot.length * 19 + chartH + 14;
 
   // Bars share ONE scale — that is the whole point. Scaling each to its own
   // width would draw two equal bars and destroy the comparison.
@@ -55,7 +57,7 @@ export function comparisonCard({ title, titleColour = GOOD, paid, direct, cogs, 
   const win = saved != null && saved >= 0;
 
   const rows = foot.map(([k, v], i) => {
-    const y = barTop + barH * 2 + gap + 30 + i * 19;
+    const y = footTop + i * 19;
     return `  <text x="16" y="${y}" font-family="${MONO}" font-size="11" fill="${DIM}">${esc(k)}</text>
   <text x="${W - 16}" y="${y}" text-anchor="end" font-family="${MONO}" font-size="11" fill="${TEXT}">${esc(v)}</text>`;
   }).join('\n');
@@ -87,8 +89,36 @@ export function comparisonCard({ title, titleColour = GOOD, paid, direct, cogs, 
   <text x="16" y="${barTop + barH * 2 + gap + 8}" font-family="${MONO}" font-size="11" fill="${DIM}">protocol&#8217;s cost (cogs)</text>
   <text x="${W - 16}" y="${barTop + barH * 2 + gap + 8}" text-anchor="end" font-family="${MONO}" font-size="12" fill="${TEXT}">${usd(cogs)}</text>
 
-  <line x1="16" y1="${barTop + barH * 2 + gap + 18}" x2="${W - 16}" y2="${barTop + barH * 2 + gap + 18}" stroke="${EDGE}"/>
+  <line x1="16" y1="${footTop - 12}" x2="${W - 16}" y2="${footTop - 12}" stroke="${EDGE}"/>
 ${rows}
+${chart ? `  <g transform="translate(0, ${footTop + foot.length * 19 - 4})">\n${chart}\n  </g>` : ''}
 </svg>
 `;
+}
+
+/**
+ * Cumulative spent vs cumulative direct, over the life of the run.
+ *
+ * ONE SHARED Y SCALE. Two series normalised independently would draw the same
+ * curve twice and hide the very gap the chart exists to show. The filled area
+ * between them IS the saving, which is why it is drawn rather than described.
+ */
+export function series(points, { w = 388, h = 84 } = {}) {
+  const pts = (points || []).filter((p) => p && typeof p.spent === 'number' && typeof p.direct === 'number');
+  if (pts.length < 2) {
+    return `  <text x="16" y="${h / 2}" font-family="${MONO}" font-size="10.5" fill="${DIM}">collecting — the chart needs a few minutes of run</text>`;
+  }
+  const max = Math.max(...pts.map((p) => Math.max(p.spent, p.direct)), 0.0001);
+  const x = (i) => 16 + (i / (pts.length - 1)) * w;
+  const y = (v) => h - 6 - (v / max) * (h - 16);
+
+  const path = (key) => pts.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(p[key]).toFixed(1)}`).join(' ');
+  // The gap, as a closed shape: direct along the top, back along spent.
+  const gap = `${path('direct')} ` +
+    pts.slice().reverse().map((p, i) => `L${x(pts.length - 1 - i).toFixed(1)},${y(p.spent).toFixed(1)}`).join(' ') + ' Z';
+
+  return `  <path d="${gap}" fill="${GOOD}" opacity="0.13"/>
+  <path d="${path('direct')}" fill="none" stroke="${WARN}" stroke-width="1.6"/>
+  <path d="${path('spent')}" fill="none" stroke="${GOOD}" stroke-width="1.6"/>
+  <text x="16" y="${h - 1}" font-family="${MONO}" font-size="9.5" fill="${DIM}">${pts.length} samples \u00b7 the shaded gap is what leCore saved</text>`;
 }

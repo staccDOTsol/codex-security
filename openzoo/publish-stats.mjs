@@ -17,7 +17,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { rotateImage } from './cards.mjs';
-import { comparisonCard } from './render.mjs';
+import { comparisonCard, series } from './render.mjs';
+import * as history from './history.mjs';
 
 const PROXY = process.env.OPENZOO_PROXY || 'http://127.0.0.1:8402';
 const args = process.argv.slice(2);
@@ -146,7 +147,16 @@ if (findings.length) {
 
 fs.writeFileSync(path.join(repoRoot, 'STATS.md'), md.join('\n') + '\n');
 
-// ── card ─────────────────────────────────────────────────────────────────
+// One sample per publish. The shape of the run is the argument; a single
+// snapshot cannot show spent and direct pulling apart.
+history.append(repoRoot, {
+  t: Date.now(), calls: session?.paidCalls ?? null,
+  spent: spent ?? null, direct: direct ?? null, cogs: cogs ?? null,
+  repos: done, findings: findings.length,
+});
+const points = history.read(repoRoot);
+
+// ── card �────────────────────────────────────────────────────────────────
 const svg = comparisonCard({
   title: 'OPENZOO · THIS REPO\u2019S SECURITY SCAN',
   paid: spent, direct, cogs,
@@ -155,6 +165,7 @@ const svg = comparisonCard({
     ['repos scanned', `${done} / ${done + failed}`],
     ['findings', String(findings.length)],
   ],
+  chart: series(points),
 });
 const imgName = rotateImage(repoRoot, 'run', svg);
 
