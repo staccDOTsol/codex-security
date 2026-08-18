@@ -69,7 +69,27 @@ function readFindings(dir) {
         try {
           const j = JSON.parse(fs.readFileSync(p, 'utf8'));
           for (const f of (Array.isArray(j) ? j : j.findings || [])) {
-            out.push({ repo, severity: f.severity || 'unknown', title: f.title || f.name || '(untitled)', file: f.file || f.path || '' });
+            // `severity` is an OBJECT — {level, score, scoringSystem, rationale}
+            // — not a string. Storing it raw renders "[object Object]" in the
+            // table and groups every finding under one bogus severity.
+            const sev = typeof f.severity === 'string'
+              ? f.severity
+              : (f.severity?.level ?? 'unknown');
+            const score = typeof f.severity === 'object' ? f.severity?.score : undefined;
+            // Locations is an array of {path, lines...}; take the first as the
+            // headline and keep the count so a multi-site finding is not
+            // silently presented as a single-site one.
+            const locs = Array.isArray(f.locations) ? f.locations : [];
+            const first = locs[0] || {};
+            out.push({
+              repo,
+              severity: String(sev).toLowerCase(),
+              score: typeof score === 'number' ? score : null,
+              title: f.title || f.summary || '(untitled)',
+              file: first.path || first.file || f.file || f.path || '',
+              locations: locs.length,
+              confidence: f.confidence?.level ?? f.confidence ?? null,
+            });
           }
         } catch { /* a half-written artifact is normal mid-scan */ }
       }
@@ -146,11 +166,11 @@ const md = [
 if (findings.length) {
   md.push('### By severity', '', '| severity | count |', '| --- | --- |');
   for (const s of sevOrder) if (bySev[s]) md.push(`| ${s} | ${bySev[s]} |`);
-  md.push('', '### Findings', '', '| repo | severity | finding | file |', '| --- | --- | --- | --- |');
+  md.push('', '### Findings', '', '| repo | severity | score | finding | file |', '| --- | --- | --- | --- | --- |');
   const rank = (f) => sevOrder.indexOf(f.severity);
   for (const f of [...findings].sort((a, b) => rank(a) - rank(b)).slice(0, 200)) {
     const cell = (v) => String(v).replace(/\|/g, '\\|').slice(0, 90);
-    md.push(`| ${cell(f.repo)} | ${cell(f.severity)} | ${cell(f.title)} | ${cell(f.file)} |`);
+    md.push(`| ${cell(f.repo)} | ${cell(f.severity)} | ${f.score ?? '—'} | ${cell(f.title)} | ${cell(f.file)} |`);
   }
   if (findings.length > 200) md.push('', `_${findings.length - 200} further findings omitted._`);
 }

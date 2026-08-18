@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "001-sanctum-validator-lsts",
+    "severity": "medium",
+    "score": 6.5,
+    "title": "Mixed stake deposits apply the stake referral rate to SOL deposit fees",
+    "file": "stake-pool/program/src/processor.rs",
+    "locations": 3,
+    "confidence": "high"
+  }
+]

@@ -7,12 +7,12 @@ because GitHub's image proxy caches a static README URL indefinitely._
 
 | metric | value |
 | --- | --- |
-| paid calls | 281 |
-| spent | $30.35 |
-| our cost (cogs) | $20.19 |
-| buying direct would be | $80.49 |
-| multiple | 2.65x |
-| prepaid credit left | $389.19 |
+| paid calls | 289 |
+| spent | $31.42 |
+| our cost (cogs) | $20.91 |
+| buying direct would be | $85.01 |
+| multiple | 2.71x |
+| prepaid credit left | $387.97 |
 
 ## Scan
 
@@ -26,9 +26,10 @@ because GitHub's image proxy caches a static README URL indefinitely._
 
 | severity | count |
 | --- | --- |
+| medium | 1 |
 
 ### Findings
 
-| repo | severity | finding | file |
-| --- | --- | --- | --- |
-| 001-sanctum-validator-lsts | [object Object] | Mixed stake deposits apply the stake referral rate to SOL deposit fees |  |
+| repo | severity | score | finding | file |
+| --- | --- | --- | --- | --- |
+| 001-sanctum-validator-lsts | medium | 6.5 | Mixed stake deposits apply the stake referral rate to SOL deposit fees | stake-pool/program/src/processor.rs |
