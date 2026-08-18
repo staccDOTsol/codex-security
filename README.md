@@ -1,6 +1,10 @@
 # Codex Security
 
-> ### Running this through [openzoo](https://openzoo.fun) instead of an OpenAI account
+> ### Running this through **[openzoo.fun](https://openzoo.fun)** instead of an OpenAI account
+>
+> **[openzoo.fun](https://openzoo.fun)** · pay-per-call access to ~985 models from a wallet.
+> No account, no API key, no rate limit. [Live network stats](https://openzoo.fun/stats) ·
+> [npm](https://www.npmjs.com/package/openzoo) · [setup for this repo](openzoo/README.md)
 >
 > <table><tr>
 > <td><img src="openzoo/cards/run-1787034022506.svg" width="420" alt="this repo's codex-security run"></td>
