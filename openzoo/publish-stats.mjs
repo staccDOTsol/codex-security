@@ -127,6 +127,9 @@ if (!session && !results.length && !findings.length) {
   process.exit(78); // EX_CONFIG — "this environment cannot do the job"
 }
 const done = results.filter((r) => r.status === 'completed').length;
+// A partial-coverage scan DID run and DID write artifacts. Counting it as
+// unscanned understates the work and makes the findings look unbacked.
+const partial = results.filter((r) => r.status === 'completed_with_incomplete_coverage').length;
 const failed = results.filter((r) => r.status === 'failed').length;
 
 const spent = session?.spentUsd, direct = session?.directUsd, cogs = session?.cogsUsd;
@@ -209,7 +212,7 @@ const svg = comparisonCard({
   paid: spent, direct, cogs,
   foot: [
     ['paid calls', num(session?.paidCalls)],
-    ['repos scanned', `${done} / ${total}`],
+    ['repos scanned', `${done + partial} / ${total}`],
     ['findings', String(findings.length)],
   ],
   chart: series(points),
@@ -219,8 +222,20 @@ const imgName = rotateImage(repoRoot, 'run', svg);
 // ITEMISE THE FINDINGS ON THE README ITSELF. A count is a claim; the table is
 // the evidence, and it is the only part of this a security reader cares about.
 const sevRank = { critical: 0, high: 1, medium: 2, low: 3, unknown: 4 };
+// Findings alone hide the denominator: one finding reads as a thin result
+// until you know four other repositories came back CLEAN. Scanned-vs-clean is
+// the context that makes a single finding meaningful.
+const clean = results.filter((r) => String(r.status || '').startsWith('completed')).length
+  - new Set(findings.map((f) => f.repo)).size;
+const summary =
+  `**${done + partial} of ${total} repositories scanned** · ` +
+  `${Math.max(0, clean)} clean · ${new Set(findings.map((f) => f.repo)).size} with findings` +
+  (failed ? ` · ${failed} failed` : '');
+
 const block = findings.length
   ? [
+      '',
+      summary,
       '',
       `**${findings.length} finding${findings.length === 1 ? '' : 's'}** across ` +
         `${new Set(findings.map((f) => f.repo)).size} repositor` +
@@ -239,7 +254,7 @@ const block = findings.length
       ...(findings.length > 40 ? ['', `_${findings.length - 40} more in [openzoo/findings](openzoo/findings)._`] : []),
       '',
     ]
-  : ['', '_No findings yet — the scan is still running. This table populates itself._', ''];
+  : ['', summary, '', '_No findings yet. This table populates itself as repositories complete._', ''];
 writeBlock(repoRoot, 'findings', block);
 
 const busted = true; // README link rewritten by rotateImage
