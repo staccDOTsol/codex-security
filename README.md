@@ -7,7 +7,7 @@
 > [npm](https://www.npmjs.com/package/openzoo) · [setup for this repo](openzoo/README.md)
 >
 > <table><tr>
-> <td><img src="openzoo/cards/run-1787038291746.svg" width="420" alt="this repo's codex-security run"></td>
+> <td><img src="openzoo/cards/run-1787038414231.svg" width="420" alt="this repo's codex-security run"></td>
 > <td><img src="openzoo/cards/net-1787033469133.svg" width="420" alt="openzoo network today"></td>
 > </tr></table>
 >
