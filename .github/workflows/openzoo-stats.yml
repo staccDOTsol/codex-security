@@ -9,10 +9,13 @@ name: openzoo stats
 # The proxy is not reachable from a hosted runner, so this is useful on a
 # self-hosted runner beside the scan, or run the script locally and push.
 
+# NO SCHEDULE. A hosted runner can reach neither a proxy on 127.0.0.1 nor a
+# scan directory on a laptop, so a cron here would run every 15 minutes,
+# find nothing, and (before the publisher's guard) overwrite real numbers with
+# blanks. Use openzoo/watch-and-publish.sh on the machine running the scan.
+# This workflow stays for a SELF-HOSTED runner that sits beside the proxy.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/15 * * * *'
 
 permissions:
   contents: write

@@ -179,3 +179,18 @@ the agent is not repeating itself enough for binding to pay off, and that is a
 result worth publishing too.
 
 Live numbers for this repo's own run: [STATS.md](../STATS.md).
+
+### Keeping them live
+
+```bash
+./openzoo/watch-and-publish.sh /path/to/scan-output 900
+```
+
+Regenerates `STATS.md` + `stats.svg`, commits, and pushes — every 15 minutes,
+**from the machine running the scan**.
+
+It has to be that machine. A GitHub-hosted runner can reach neither a proxy on
+`127.0.0.1` nor a scan directory on your laptop, so a hosted cron would publish
+empty numbers on a schedule. `publish-stats.mjs` exits `78` rather than write a
+table of dashes over real data; the loop treats that as normal and keeps going,
+which it is for the first few minutes of any run.

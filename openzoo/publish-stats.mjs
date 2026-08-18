@@ -77,6 +77,22 @@ function readFindings(dir) {
 
 const results = readResults(outDir);
 const findings = readFindings(outDir);
+
+// REFUSE TO PUBLISH NOTHING.
+//
+// Every field degrades to "—" when a source is missing, which is right for a
+// half-finished run and catastrophic on a schedule: a hosted runner cannot
+// reach a proxy on localhost and cannot see a scan directory on someone's
+// laptop, so an unguarded cron would overwrite real numbers with blanks every
+// 15 minutes and look like it was working. Publish only when there is something
+// to say.
+if (!session && !results.length && !findings.length) {
+  console.error(
+    `nothing to publish: proxy ${PROXY} unreachable and no results under ${outDir || '(no --out-dir)'}.\n` +
+    'Run this on the machine hosting the proxy and the scan output. Existing STATS.md left untouched.',
+  );
+  process.exit(78); // EX_CONFIG — "this environment cannot do the job"
+}
 const done = results.filter((r) => r.status === 'completed').length;
 const failed = results.filter((r) => r.status === 'failed').length;
 
