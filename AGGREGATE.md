@@ -9,46 +9,49 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-19`
 
 | metric | value |
 | --- | --- |
-| calls | 4,653 |
-| paid calls | 133 |
-| free calls | 311 |
-| revenue | $10.45 |
-| cost of goods | $4.18 |
-| margin | 60% |
-| buying direct would be | $10.21 |
-| **leCore saving** | **0.98x** |
-| distinct payers | 2 |
-| quote → paid conversion | 3.8% |
+| calls | 67,200 |
+| paid calls | 1,084 |
+| free calls | 36,055 |
+| revenue | $164.07 |
+| cost of goods | $133.69 |
+| margin | 18.5% |
+| buying direct would be | $244.93 |
+| **leCore saving** | **1.49x** |
+| distinct payers | 6 |
+| quote → paid conversion | 12.7% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 4,653 |
-| paid calls | 133 |
-| revenue | $10.45 |
-| average per day | $10.45 |
+| calls | 202,556 |
+| paid calls | 7,639 |
+| revenue | $1,037.79 |
+| average per day | $345.93 |
 
 ## Daily history
 
 | day | calls | paid | revenue | margin | leCore saving |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-19 | 4,653 | 133 | $10.45 | 60% | 0.98x |
+| 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
+| 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
+| 2026-08-19 | 67,200 | 1,084 | $164.07 | 18.5% | 1.49x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `anthropic/claude-sonnet-5` | 916 |
-| `google/gemini-2.5-flash` | 827 |
-| `anthropic/claude-sonnet-4` | 824 |
-| `openai/gpt-4o-mini` | 824 |
-| `x-ai/grok-4.6` | 824 |
-| `nvidia/nemotron-3.5-lightning` | 21 |
+| `x-ai/grok-4.6` | 1,220 |
+| `google/gemini-2.5-flash` | 1,184 |
+| `openai/gpt-4o-mini` | 1,182 |
+| `anthropic/claude-sonnet-4` | 1,181 |
+| `anthropic/claude-sonnet-5` | 1,009 |
+| `anthropic/claude-fable-5` | 40 |
+| `nvidia/nemotron-3.5-lightning` | 31 |
 
 ## Coverage
 
-- days: 1, since 2026-08-19
+- days: 3, since 2026-08-17
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
