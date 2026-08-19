@@ -9,43 +9,41 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-19`
 
 | metric | value |
 | --- | --- |
-| calls | 92,154 |
-| paid calls | 1,084 |
-| free calls | 51,364 |
-| revenue | $164.07 |
-| cost of goods | $133.69 |
-| margin | 18.5% |
-| buying direct would be | $244.93 |
-| **leCore saving** | **1.49x** |
-| distinct payers | 6 |
-| quote → paid conversion | 12.6% |
+| calls | 765 |
+| paid calls | 1 |
+| free calls | 339 |
+| revenue | $0.06 |
+| cost of goods | $0.03 |
+| margin | 50.8% |
+| buying direct would be | $0.06 |
+| **leCore saving** | **1x** |
+| distinct payers | 2 |
+| quote → paid conversion | 0.7% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 227,510 |
-| paid calls | 7,639 |
-| revenue | $1,037.79 |
-| average per day | $345.93 |
+| calls | 765 |
+| paid calls | 1 |
+| revenue | $0.06 |
+| average per day | $0.06 |
 
 ## Daily history
 
 | day | calls | paid | revenue | margin | leCore saving |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
-| 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
-| 2026-08-19 | 92,154 | 1,084 | $164.07 | 18.5% | 1.49x |
+| 2026-08-19 | 765 | 1 | $0.06 | 50.8% | 1x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 2,658 |
-| `anthropic/claude-sonnet-4` | 2,053 |
-| `google/gemini-2.5-flash` | 2,048 |
-| `openai/gpt-4o-mini` | 2,048 |
-| `anthropic/claude-sonnet-5` | 731 |
+| `x-ai/grok-4.6` | 2,661 |
+| `anthropic/claude-sonnet-4` | 2,056 |
+| `google/gemini-2.5-flash` | 2,051 |
+| `openai/gpt-4o-mini` | 2,051 |
+| `anthropic/claude-sonnet-5` | 725 |
 | `anthropic/claude-fable-5` | 313 |
 | `nvidia/nemotron-3.5-lightning` | 36 |
 | `deepseek/deepseek-v4-pro-0813` | 7 |
@@ -53,7 +51,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-19`
 
 ## Coverage
 
-- days: 3, since 2026-08-17
+- days: 1, since 2026-08-19
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
