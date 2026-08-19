@@ -9,49 +9,51 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-19`
 
 | metric | value |
 | --- | --- |
-| calls | 12,063 |
-| paid calls | 529 |
-| free calls | 550 |
-| revenue | $79.39 |
-| cost of goods | $48.19 |
-| margin | 39.3% |
-| buying direct would be | $83.93 |
-| **leCore saving** | **1.06x** |
-| distinct payers | 4 |
-| quote → paid conversion | 5.6% |
+| calls | 82,708 |
+| paid calls | 1,084 |
+| free calls | 46,492 |
+| revenue | $164.07 |
+| cost of goods | $133.69 |
+| margin | 18.5% |
+| buying direct would be | $244.93 |
+| **leCore saving** | **1.49x** |
+| distinct payers | 6 |
+| quote → paid conversion | 12.6% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 12,063 |
-| paid calls | 529 |
-| revenue | $79.39 |
-| average per day | $79.39 |
+| calls | 218,064 |
+| paid calls | 7,639 |
+| revenue | $1,037.79 |
+| average per day | $345.93 |
 
 ## Daily history
 
 | day | calls | paid | revenue | margin | leCore saving |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-19 | 12,063 | 529 | $79.39 | 39.3% | 1.06x |
+| 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
+| 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
+| 2026-08-19 | 82,708 | 1,084 | $164.07 | 18.5% | 1.49x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 2,383 |
-| `anthropic/claude-sonnet-4` | 1,831 |
-| `google/gemini-2.5-flash` | 1,828 |
-| `openai/gpt-4o-mini` | 1,824 |
-| `anthropic/claude-sonnet-5` | 1,254 |
+| `x-ai/grok-4.6` | 2,443 |
+| `anthropic/claude-sonnet-4` | 1,836 |
+| `google/gemini-2.5-flash` | 1,834 |
+| `openai/gpt-4o-mini` | 1,831 |
+| `anthropic/claude-sonnet-5` | 1,246 |
 | `anthropic/claude-fable-5` | 315 |
-| `nvidia/nemotron-3.5-lightning` | 52 |
+| `nvidia/nemotron-3.5-lightning` | 49 |
 | `deepseek/deepseek-v4-pro-0813` | 7 |
 | `google/gemini-3.7-flash` | 4 |
 
 ## Coverage
 
-- days: 1, since 2026-08-19
+- days: 3, since 2026-08-17
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
