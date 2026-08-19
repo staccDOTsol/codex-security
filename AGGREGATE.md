@@ -39,11 +39,11 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-19`
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 2,661 |
-| `anthropic/claude-sonnet-4` | 2,056 |
-| `google/gemini-2.5-flash` | 2,051 |
-| `openai/gpt-4o-mini` | 2,051 |
-| `anthropic/claude-sonnet-5` | 725 |
+| `x-ai/grok-4.6` | 2,659 |
+| `anthropic/claude-sonnet-4` | 2,057 |
+| `google/gemini-2.5-flash` | 2,052 |
+| `openai/gpt-4o-mini` | 2,052 |
+| `anthropic/claude-sonnet-5` | 724 |
 | `anthropic/claude-fable-5` | 313 |
 | `nvidia/nemotron-3.5-lightning` | 36 |
 | `deepseek/deepseek-v4-pro-0813` | 7 |
