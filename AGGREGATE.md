@@ -9,49 +9,47 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-19`
 
 | metric | value |
 | --- | --- |
-| calls | 67,200 |
-| paid calls | 1,084 |
-| free calls | 36,055 |
-| revenue | $164.07 |
-| cost of goods | $133.69 |
-| margin | 18.5% |
-| buying direct would be | $244.93 |
-| **leCore saving** | **1.49x** |
-| distinct payers | 6 |
-| quote → paid conversion | 12.7% |
+| calls | 7,100 |
+| paid calls | 184 |
+| free calls | 340 |
+| revenue | $43.74 |
+| cost of goods | $34.43 |
+| margin | 21.3% |
+| buying direct would be | $42.14 |
+| **leCore saving** | **0.96x** |
+| distinct payers | 4 |
+| quote → paid conversion | 3.2% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 202,556 |
-| paid calls | 7,639 |
-| revenue | $1,037.79 |
-| average per day | $345.93 |
+| calls | 7,100 |
+| paid calls | 184 |
+| revenue | $43.74 |
+| average per day | $43.74 |
 
 ## Daily history
 
 | day | calls | paid | revenue | margin | leCore saving |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
-| 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
-| 2026-08-19 | 67,200 | 1,084 | $164.07 | 18.5% | 1.49x |
+| 2026-08-19 | 7,100 | 184 | $43.74 | 21.3% | 0.96x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 1,220 |
-| `google/gemini-2.5-flash` | 1,184 |
-| `openai/gpt-4o-mini` | 1,182 |
-| `anthropic/claude-sonnet-4` | 1,181 |
-| `anthropic/claude-sonnet-5` | 1,009 |
-| `anthropic/claude-fable-5` | 40 |
-| `nvidia/nemotron-3.5-lightning` | 31 |
+| `x-ai/grok-4.6` | 1,388 |
+| `google/gemini-2.5-flash` | 1,353 |
+| `openai/gpt-4o-mini` | 1,350 |
+| `anthropic/claude-sonnet-4` | 1,349 |
+| `anthropic/claude-sonnet-5` | 1,031 |
+| `anthropic/claude-fable-5` | 124 |
+| `nvidia/nemotron-3.5-lightning` | 35 |
 
 ## Coverage
 
-- days: 3, since 2026-08-17
+- days: 1, since 2026-08-19
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
