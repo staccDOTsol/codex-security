@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 
 | metric | value |
 | --- | --- |
-| calls | 11,479 |
+| calls | 12,739 |
 | paid calls | 4 |
-| free calls | 6,018 |
+| free calls | 6,687 |
 | revenue | $0.07 |
 | cost of goods | $0.07 |
 | margin | 13% |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 
 | metric | value |
 | --- | --- |
-| calls | 242,216 |
+| calls | 243,476 |
 | paid calls | 7,643 |
 | revenue | $1,037.86 |
 | average per day | $259.47 |
@@ -36,22 +36,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 | 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 95,381 | 1,084 | $164.07 | 18.5% | 1.49x |
-| 2026-08-20 | 11,479 | 4 | $0.07 | 13% | 1.7x |
+| 2026-08-20 | 12,739 | 4 | $0.07 | 13% | 1.7x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 2,186 |
-| `openai/gpt-4o-mini` | 1,748 |
-| `google/gemini-2.5-flash` | 1,712 |
-| `anthropic/claude-sonnet-4` | 1,704 |
-| `google/gemini-3.7-flash` | 596 |
-| `anthropic/claude-sonnet-5` | 339 |
-| `inclusionai/ling-3.0-flash` | 109 |
-| `bytedance-seed/seed-2.0-mini` | 106 |
-| `z-ai/glm-4.6v` | 99 |
-| `z-ai/glm-4.5-air` | 99 |
+| `x-ai/grok-4.6` | 1,945 |
+| `openai/gpt-4o-mini` | 1,639 |
+| `google/gemini-2.5-flash` | 1,605 |
+| `anthropic/claude-sonnet-4` | 1,596 |
+| `google/gemini-3.7-flash` | 803 |
+| `anthropic/claude-sonnet-5` | 252 |
+| `inclusionai/ling-3.0-flash` | 121 |
+| `bytedance-seed/seed-2.0-mini` | 118 |
+| `z-ai/glm-4.6v` | 111 |
+| `z-ai/glm-4.5-air` | 104 |
 
 ## Coverage
 
