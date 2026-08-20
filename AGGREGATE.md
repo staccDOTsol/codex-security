@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 
 | metric | value |
 | --- | --- |
-| calls | 73,670 |
-| paid calls | 19,879 |
-| free calls | 11,367 |
-| revenue | $237.85 |
-| cost of goods | $217.86 |
+| calls | 76,751 |
+| paid calls | 19,905 |
+| free calls | 12,474 |
+| revenue | $237.99 |
+| cost of goods | $218.08 |
 | margin | 8.4% |
-| buying direct would be | $255.69 |
+| buying direct would be | $255.87 |
 | **leCore saving** | **1.08x** |
 | distinct payers | 9 |
-| quote → paid conversion | 63.7% |
+| quote → paid conversion | 62.2% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 321,200 |
-| paid calls | 28,124 |
-| revenue | $1,369.17 |
-| average per day | $342.29 |
+| calls | 324,281 |
+| paid calls | 28,150 |
+| revenue | $1,369.31 |
+| average per day | $342.33 |
 
 ## Daily history
 
@@ -36,22 +36,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 | 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
-| 2026-08-20 | 73,670 | 19,879 | $237.85 | 8.4% | 1.08x |
+| 2026-08-20 | 76,751 | 19,905 | $237.99 | 8.4% | 1.08x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-5.6-luna` | 744 |
-| `x-ai/grok-4.6` | 741 |
+| `x-ai/grok-4.6` | 1,116 |
 | `perplexity/sonar-pro-search` | 734 |
 | `thinkingmachines/inkling` | 722 |
 | `writer/palmyra-x5` | 694 |
 | `sakana/fugu-ultra` | 680 |
 | `openrouter/free` | 396 |
-| `nvidia/nemotron-3-nano-30b-a3b:free` | 300 |
 | `z-ai/glm-5.2:free` | 288 |
-| `openai/gpt-oss-20b:free` | 276 |
+| `openai/gpt-oss-20b:free` | 264 |
+| `anthropic/claude-sonnet-5` | 235 |
+| `openai/gpt-5.6-luna` | 196 |
 
 ## Coverage
 
