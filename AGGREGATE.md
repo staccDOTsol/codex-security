@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 
 | metric | value |
 | --- | --- |
-| calls | 32,235 |
-| paid calls | 1,120 |
-| free calls | 10,074 |
-| revenue | $48.50 |
-| cost of goods | $20.07 |
-| margin | 58.6% |
-| buying direct would be | $55.85 |
-| **leCore saving** | **1.15x** |
+| calls | 42,380 |
+| paid calls | 5,778 |
+| free calls | 10,422 |
+| revenue | $96.16 |
+| cost of goods | $68.72 |
+| margin | 28.5% |
+| buying direct would be | $107.60 |
+| **leCore saving** | **1.12x** |
 | distinct payers | 6 |
-| quote → paid conversion | 10.2% |
+| quote → paid conversion | 36.6% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 279,765 |
-| paid calls | 9,365 |
-| revenue | $1,179.82 |
-| average per day | $294.96 |
+| calls | 289,910 |
+| paid calls | 14,023 |
+| revenue | $1,227.49 |
+| average per day | $306.87 |
 
 ## Daily history
 
@@ -36,22 +36,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-20`
 | 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
-| 2026-08-20 | 32,235 | 1,120 | $48.50 | 58.6% | 1.15x |
+| 2026-08-20 | 42,380 | 5,778 | $96.16 | 28.5% | 1.12x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 1,544 |
-| `google/gemini-2.5-flash` | 1,518 |
-| `anthropic/claude-sonnet-4` | 1,510 |
-| `x-ai/grok-4.6` | 1,506 |
-| `google/gemini-3.7-flash` | 695 |
-| `deepseek/deepseek-v4-pro-0813` | 638 |
-| `anthropic/claude-sonnet-5` | 283 |
-| `openai/gpt-5.6-luna` | 136 |
-| `deepseek/deepseek-v4-flash` | 108 |
-| `bytedance-seed/seed-2.0-code` | 94 |
+| `google/gemini-3.1-flash-lite-preview` | 1,450 |
+| `google/gemma-4-31b-it:free` | 448 |
+| `openai/gpt-5.6-luna` | 348 |
+| `google/gemini-3.5-flash` | 308 |
+| `openai/gpt-5.4` | 308 |
+| `anthropic/claude-opus-5` | 306 |
+| `x-ai/grok-4.6` | 292 |
+| `nvidia/nemotron-3-super-120b-a12b:free` | 248 |
+| `google/gemma-4-26b-a4b-it:free` | 242 |
+| `anthropic/claude-sonnet-5` | 232 |
 
 ## Coverage
 
