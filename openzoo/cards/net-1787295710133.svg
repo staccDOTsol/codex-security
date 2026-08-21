@@ -4,27 +4,27 @@
 
   <text x="16" y="26" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#ff9955" letter-spacing="0.06em">OPENZOO · EVERY DEVELOPER, TODAY</text>
 
-  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" font-weight="600" fill="#b8f22d">saved $10.44</text>
-  <text x="404" y="62" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" font-weight="600" fill="#b8f22d">1.58x</text>
+  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" font-weight="600" fill="#b8f22d">saved $11.96</text>
+  <text x="404" y="62" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" font-weight="600" fill="#b8f22d">1.59x</text>
   <text x="16" y="84" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.5" fill="#8a8a95">vs buying the same tokens direct</text>
 
-  <rect x="16" y="108" width="246" height="18" rx="3" fill="#b8f22d" opacity="0.85"/>
+  <rect x="16" y="108" width="243" height="18" rx="3" fill="#b8f22d" opacity="0.85"/>
   <text x="22" y="121" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#0e0e11" font-weight="600">dev spent</text>
-  <text x="404" y="121" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#e6e6e6">$18.01</text>
+  <text x="404" y="121" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#e6e6e6">$20.13</text>
 
   <rect x="16" y="134" width="388" height="18" rx="3" fill="#ff9955" opacity="0.85"/>
   <text x="22" y="147" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#0e0e11" font-weight="600">buying direct</text>
-  <text x="404" y="147" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#ff9955">$28.45</text>
+  <text x="404" y="147" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#ff9955">$32.09</text>
 
   <text x="16" y="180" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">protocol&#8217;s cost (cogs)</text>
-  <text x="404" y="180" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#e6e6e6">$18.34</text>
+  <text x="404" y="180" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" fill="#e6e6e6">$20.48</text>
 
   <line x1="16" y1="190" x2="404" y2="190" stroke="#33333d"/>
   <text x="16" y="202" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">calls</text>
-  <text x="404" y="202" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">13,785</text>
+  <text x="404" y="202" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">19,862</text>
   <text x="16" y="221" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">paid calls</text>
-  <text x="404" y="221" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">548</text>
+  <text x="404" y="221" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">688</text>
   <text x="16" y="240" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">developers paying</text>
-  <text x="404" y="240" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">10</text>
+  <text x="404" y="240" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">12</text>
 
 </svg>
