@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 
 | metric | value |
 | --- | --- |
-| calls | 35,128 |
-| paid calls | 934 |
-| free calls | 8,121 |
-| revenue | $42.35 |
-| cost of goods | $32.68 |
-| margin | 22.8% |
-| buying direct would be | $100.56 |
-| **leCore saving** | **2.37x** |
-| distinct payers | 15 |
-| quote → paid conversion | 5.3% |
+| calls | 37,997 |
+| paid calls | 947 |
+| free calls | 8,462 |
+| revenue | $43.89 |
+| cost of goods | $33.04 |
+| margin | 24.7% |
+| buying direct would be | $113.16 |
+| **leCore saving** | **2.58x** |
+| distinct payers | 16 |
+| quote → paid conversion | 4.8% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 383,644 |
-| paid calls | 29,388 |
-| revenue | $1,443.20 |
-| average per day | $288.64 |
+| calls | 386,513 |
+| paid calls | 29,401 |
+| revenue | $1,444.74 |
+| average per day | $288.95 |
 
 ## Daily history
 
@@ -37,22 +37,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
-| 2026-08-21 | 35,128 | 934 | $42.35 | 22.8% | 2.37x |
+| 2026-08-21 | 37,997 | 947 | $43.89 | 24.7% | 2.58x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 2,670 |
-| `x-ai/grok-4.6` | 2,216 |
-| `google/gemini-2.5-flash` | 1,940 |
-| `anthropic/claude-sonnet-4` | 1,935 |
-| `upstage/solar-pro4` | 1,622 |
-| `anthropic/claude-sonnet-5` | 611 |
-| `google/gemini-3.7-flash` | 407 |
-| `inclusionai/ling-2.6-flash` | 406 |
-| `anthropic/claude-opus-4` | 164 |
-| `nex-agi/nex-n2-mini` | 101 |
+| `openai/gpt-4o-mini` | 2,672 |
+| `x-ai/grok-4.6` | 2,309 |
+| `google/gemini-2.5-flash` | 1,962 |
+| `anthropic/claude-sonnet-4` | 1,962 |
+| `upstage/solar-pro4` | 1,873 |
+| `anthropic/claude-sonnet-5` | 550 |
+| `inclusionai/ling-2.6-flash` | 398 |
+| `google/gemini-3.7-flash` | 393 |
+| `sao10k/l3-lunaris-8b` | 80 |
+| `anthropic/claude-opus-5` | 69 |
 
 ## Coverage
 
