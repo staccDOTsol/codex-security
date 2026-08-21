@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 
 | metric | value |
 | --- | --- |
-| calls | 13,785 |
-| paid calls | 548 |
-| free calls | 3,454 |
-| revenue | $18.01 |
-| cost of goods | $18.34 |
+| calls | 15,758 |
+| paid calls | 644 |
+| free calls | 3,920 |
+| revenue | $18.52 |
+| cost of goods | $18.85 |
 | margin | -1.8% |
-| buying direct would be | $28.45 |
-| **leCore saving** | **1.58x** |
+| buying direct would be | $30.42 |
+| **leCore saving** | **1.64x** |
 | distinct payers | 10 |
-| quote → paid conversion | 9.5% |
+| quote → paid conversion | 10% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 362,301 |
-| paid calls | 29,002 |
-| revenue | $1,418.86 |
-| average per day | $283.77 |
+| calls | 364,274 |
+| paid calls | 29,098 |
+| revenue | $1,419.37 |
+| average per day | $283.87 |
 
 ## Daily history
 
@@ -37,22 +37,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
-| 2026-08-21 | 13,785 | 548 | $18.01 | -1.8% | 1.58x |
+| 2026-08-21 | 15,758 | 644 | $18.52 | -1.8% | 1.64x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 1,782 |
-| `anthropic/claude-sonnet-4` | 1,256 |
-| `google/gemini-2.5-flash` | 972 |
-| `x-ai/grok-4.6` | 970 |
-| `anthropic/claude-sonnet-5` | 968 |
-| `inclusionai/ling-2.6-flash` | 655 |
-| `google/gemini-3.7-flash` | 425 |
-| `upstage/solar-pro4` | 366 |
-| `sao10k/l3-lunaris-8b` | 74 |
-| `meta-llama/llama-3.1-8b-instruct` | 72 |
+| `openai/gpt-4o-mini` | 2,279 |
+| `anthropic/claude-sonnet-4` | 1,364 |
+| `anthropic/claude-sonnet-5` | 1,094 |
+| `google/gemini-2.5-flash` | 1,081 |
+| `x-ai/grok-4.6` | 1,077 |
+| `inclusionai/ling-2.6-flash` | 676 |
+| `google/gemini-3.7-flash` | 547 |
+| `upstage/solar-pro4` | 409 |
+| `nex-agi/nex-n2-mini` | 81 |
+| `sao10k/l3-lunaris-8b` | 80 |
 
 ## Coverage
 
