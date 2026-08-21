@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 
 | metric | value |
 | --- | --- |
-| calls | 21,663 |
-| paid calls | 740 |
-| free calls | 5,391 |
-| revenue | $22.03 |
-| cost of goods | $21.10 |
-| margin | 4.2% |
-| buying direct would be | $36.17 |
-| **leCore saving** | **1.64x** |
+| calls | 23,519 |
+| paid calls | 768 |
+| free calls | 5,865 |
+| revenue | $37.91 |
+| cost of goods | $29.15 |
+| margin | 23.1% |
+| buying direct would be | $67.93 |
+| **leCore saving** | **1.79x** |
 | distinct payers | 12 |
-| quote → paid conversion | 8.1% |
+| quote → paid conversion | 7.8% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 370,179 |
-| paid calls | 29,194 |
-| revenue | $1,422.88 |
-| average per day | $284.58 |
+| calls | 372,035 |
+| paid calls | 29,222 |
+| revenue | $1,438.76 |
+| average per day | $287.75 |
 
 ## Daily history
 
@@ -37,22 +37,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
-| 2026-08-21 | 21,663 | 740 | $22.03 | 4.2% | 1.64x |
+| 2026-08-21 | 23,519 | 768 | $37.91 | 23.1% | 1.79x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 2,989 |
-| `anthropic/claude-sonnet-4` | 1,813 |
-| `x-ai/grok-4.6` | 1,519 |
-| `google/gemini-2.5-flash` | 1,512 |
-| `anthropic/claude-sonnet-5` | 1,252 |
-| `inclusionai/ling-2.6-flash` | 697 |
-| `upstage/solar-pro4` | 609 |
-| `google/gemini-3.7-flash` | 598 |
-| `nex-agi/nex-n2-mini` | 149 |
-| `ibm-granite/granite-4.1-8b` | 110 |
+| `openai/gpt-4o-mini` | 2,971 |
+| `anthropic/claude-sonnet-4` | 1,794 |
+| `x-ai/grok-4.6` | 1,494 |
+| `google/gemini-2.5-flash` | 1,475 |
+| `anthropic/claude-sonnet-5` | 1,205 |
+| `upstage/solar-pro4` | 691 |
+| `inclusionai/ling-2.6-flash` | 663 |
+| `google/gemini-3.7-flash` | 606 |
+| `nex-agi/nex-n2-mini` | 179 |
+| `anthropic/claude-opus-4` | 152 |
 
 ## Coverage
 
