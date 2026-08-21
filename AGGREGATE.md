@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 
 | metric | value |
 | --- | --- |
-| calls | 7,709 |
-| paid calls | 228 |
-| free calls | 1,791 |
-| revenue | $2.45 |
-| cost of goods | $2.64 |
-| margin | -7.6% |
-| buying direct would be | $2.67 |
-| **leCore saving** | **1.09x** |
-| distinct payers | 9 |
-| quote → paid conversion | 6.7% |
+| calls | 11,312 |
+| paid calls | 388 |
+| free calls | 2,835 |
+| revenue | $10.08 |
+| cost of goods | $10.20 |
+| margin | -1.3% |
+| buying direct would be | $16.12 |
+| **leCore saving** | **1.6x** |
+| distinct payers | 10 |
+| quote → paid conversion | 8.1% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 356,225 |
-| paid calls | 28,682 |
-| revenue | $1,403.30 |
-| average per day | $280.66 |
+| calls | 359,828 |
+| paid calls | 28,842 |
+| revenue | $1,410.93 |
+| average per day | $282.19 |
 
 ## Daily history
 
@@ -37,22 +37,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
-| 2026-08-21 | 7,709 | 228 | $2.45 | -7.6% | 1.09x |
+| 2026-08-21 | 11,312 | 388 | $10.08 | -1.3% | 1.6x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 916 |
-| `google/gemini-2.5-flash` | 612 |
-| `anthropic/claude-sonnet-4` | 609 |
-| `x-ai/grok-4.6` | 596 |
-| `anthropic/claude-sonnet-5` | 552 |
-| `inclusionai/ling-2.6-flash` | 457 |
-| `upstage/solar-pro4` | 197 |
-| `google/gemini-3.7-flash` | 191 |
-| `meta-llama/llama-3.1-8b-instruct` | 56 |
-| `nvidia/nemotron-3.5-lightning` | 45 |
+| `openai/gpt-4o-mini` | 1,538 |
+| `anthropic/claude-sonnet-4` | 990 |
+| `google/gemini-2.5-flash` | 838 |
+| `x-ai/grok-4.6` | 820 |
+| `anthropic/claude-sonnet-5` | 799 |
+| `inclusionai/ling-2.6-flash` | 478 |
+| `google/gemini-3.7-flash` | 337 |
+| `upstage/solar-pro4` | 280 |
+| `meta-llama/llama-3.1-8b-instruct` | 68 |
+| `nvidia/nemotron-3.5-lightning` | 49 |
 
 ## Coverage
 
