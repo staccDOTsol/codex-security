@@ -9,14 +9,14 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 
 | metric | value |
 | --- | --- |
-| calls | 63,332 |
-| paid calls | 3,140 |
-| free calls | 15,572 |
-| revenue | $185.16 |
-| cost of goods | $103.36 |
-| margin | 44.2% |
-| buying direct would be | $904.92 |
-| **leCore saving** | **4.89x** |
+| calls | 64,663 |
+| paid calls | 3,205 |
+| free calls | 15,881 |
+| revenue | $186.12 |
+| cost of goods | $104.27 |
+| margin | 44% |
+| buying direct would be | $906.56 |
+| **leCore saving** | **4.87x** |
 | distinct payers | 16 |
 | quote → paid conversion | 9.7% |
 
@@ -24,10 +24,10 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 
 | metric | value |
 | --- | --- |
-| calls | 411,848 |
-| paid calls | 31,594 |
-| revenue | $1,586.01 |
-| average per day | $317.20 |
+| calls | 413,179 |
+| paid calls | 31,659 |
+| revenue | $1,586.97 |
+| average per day | $317.39 |
 
 ## Daily history
 
@@ -37,22 +37,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-21`
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
-| 2026-08-21 | 63,332 | 3,140 | $185.16 | 44.2% | 4.89x |
+| 2026-08-21 | 64,663 | 3,205 | $186.12 | 44% | 4.87x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `google/gemini-3.7-flash` | 3,380 |
-| `openai/gpt-4o-mini` | 1,779 |
-| `x-ai/grok-4.6` | 1,338 |
-| `upstage/solar-pro4` | 1,041 |
-| `anthropic/claude-sonnet-4` | 1,033 |
-| `google/gemini-2.5-flash` | 1,027 |
-| `anthropic/claude-sonnet-5` | 750 |
-| `inclusionai/ling-2.6-flash` | 475 |
-| `openai/gpt-5.6-luna` | 392 |
-| `openai/gpt-5.6-sol` | 387 |
+| `google/gemini-3.7-flash` | 3,382 |
+| `openai/gpt-4o-mini` | 1,736 |
+| `x-ai/grok-4.6` | 1,255 |
+| `upstage/solar-pro4` | 1,048 |
+| `anthropic/claude-sonnet-4` | 992 |
+| `google/gemini-2.5-flash` | 986 |
+| `anthropic/claude-sonnet-5` | 788 |
+| `openai/gpt-5.6-luna` | 488 |
+| `inclusionai/ling-2.6-flash` | 467 |
+| `openai/gpt-5.6-sol` | 401 |
 
 ## Coverage
 
