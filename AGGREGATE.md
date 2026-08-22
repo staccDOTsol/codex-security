@@ -9,22 +9,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-22`
 
 | metric | value |
 | --- | --- |
-| calls | 10,463 |
+| calls | 11,746 |
 | paid calls | 9 |
-| free calls | 2,766 |
+| free calls | 3,114 |
 | revenue | $40.85 |
 | cost of goods | $23.43 |
 | margin | 42.6% |
 | buying direct would be | $66.98 |
 | **leCore saving** | **1.64x** |
 | distinct payers | 2 |
-| quote → paid conversion | 0.2% |
+| quote → paid conversion | 0.1% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 424,202 |
+| calls | 425,485 |
 | paid calls | 31,670 |
 | revenue | $1,628.31 |
 | average per day | $271.39 |
@@ -38,17 +38,17 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-22`
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
 | 2026-08-21 | 65,223 | 3,207 | $186.61 | 44% | 4.86x |
-| 2026-08-22 | 10,463 | 9 | $40.85 | 42.6% | 1.64x |
+| 2026-08-22 | 11,746 | 9 | $40.85 | 42.6% | 1.64x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `google/gemini-2.5-flash` | 936 |
-| `anthropic/claude-sonnet-4` | 934 |
-| `openai/gpt-4o-mini` | 932 |
-| `x-ai/grok-4.6` | 930 |
-| `upstage/solar-pro4` | 738 |
+| `google/gemini-2.5-flash` | 1,049 |
+| `anthropic/claude-sonnet-4` | 1,047 |
+| `openai/gpt-4o-mini` | 1,044 |
+| `x-ai/grok-4.6` | 1,041 |
+| `upstage/solar-pro4` | 844 |
 | `anthropic/claude-opus-4` | 92 |
 | `anthropic/claude-fable-5` | 53 |
 | `anthropic/claude-sonnet-5` | 52 |
