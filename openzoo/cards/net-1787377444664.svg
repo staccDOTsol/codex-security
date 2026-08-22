@@ -21,7 +21,7 @@
 
   <line x1="16" y1="190" x2="404" y2="190" stroke="#33333d"/>
   <text x="16" y="202" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">calls</text>
-  <text x="404" y="202" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">6,782</text>
+  <text x="404" y="202" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">9,717</text>
   <text x="16" y="221" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">paid calls</text>
   <text x="404" y="221" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#e6e6e6">9</text>
   <text x="16" y="240" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" fill="#8a8a95">developers paying</text>
