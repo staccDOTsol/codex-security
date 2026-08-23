@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-22`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-23`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 35,021 |
-| paid calls | 13 |
-| free calls | 10,025 |
-| revenue | $40.85 |
-| cost of goods | $23.45 |
-| margin | 42.6% |
-| buying direct would be | $66.99 |
-| **leCore saving** | **1.64x** |
-| distinct payers | 3 |
-| quote → paid conversion | 0.1% |
+| calls | 3,167 |
+| paid calls | 4 |
+| free calls | 762 |
+| revenue | $0.0000 |
+| cost of goods | $0.0004 |
+| margin | -3613.8% |
+| buying direct would be | $0.0004 |
+| **leCore saving** | **37.11x** |
+| distinct payers | 1 |
+| quote → paid conversion | 0.2% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 448,760 |
-| paid calls | 31,674 |
+| calls | 451,978 |
+| paid calls | 31,678 |
 | revenue | $1,628.32 |
-| average per day | $271.39 |
+| average per day | $232.62 |
 
 ## Daily history
 
@@ -38,25 +38,24 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-22`
 | 2026-08-19 | 112,174 | 1,690 | $257.61 | 27.3% | 1.36x |
 | 2026-08-20 | 100,986 | 20,209 | $269.52 | 7.5% | 1.3x |
 | 2026-08-21 | 65,223 | 3,207 | $186.61 | 44% | 4.86x |
-| 2026-08-22 | 35,021 | 13 | $40.85 | 42.6% | 1.64x |
+| 2026-08-22 | 35,072 | 13 | $40.85 | 42.6% | 1.64x |
+| 2026-08-23 | 3,167 | 4 | $0.0000 | -3613.8% | 37.11x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `google/gemini-2.5-flash` | 2,056 |
-| `anthropic/claude-sonnet-4` | 2,051 |
-| `openai/gpt-4o-mini` | 2,050 |
-| `x-ai/grok-4.6` | 2,046 |
-| `upstage/solar-pro4` | 1,795 |
-| `z-ai/glm-4.7-flash` | 8 |
-| `qwen/qwen3.7-flash` | 2 |
-| `anthropic/claude-sonnet-5` | 1 |
-| `nvidia/nemotron-3.5-lightning` | 1 |
+| `google/gemini-2.5-flash` | 292 |
+| `anthropic/claude-sonnet-4` | 291 |
+| `openai/gpt-4o-mini` | 291 |
+| `x-ai/grok-4.6` | 289 |
+| `upstage/solar-pro4` | 274 |
+| `nvidia/nemotron-3.5-lightning` | 8 |
+| `inclusionai/ling-2.6-flash` | 1 |
 
 ## Coverage
 
-- days: 6, since 2026-08-17
+- days: 7, since 2026-08-17
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
