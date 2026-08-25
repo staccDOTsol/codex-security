@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
 
 | metric | value |
 | --- | --- |
-| calls | 14,597 |
-| paid calls | 343 |
-| free calls | 3,009 |
-| revenue | $33.20 |
-| cost of goods | $37.64 |
-| margin | 77.3% |
-| buying direct would be | $29.71 |
-| **leCore saving** | **0.89x** |
-| distinct payers | 4 |
+| calls | 15,710 |
+| paid calls | 373 |
+| free calls | 3,279 |
+| revenue | $33.25 |
+| cost of goods | $38.39 |
+| margin | 77.1% |
+| buying direct would be | $30.42 |
+| **leCore saving** | **0.91x** |
+| distinct payers | 6 |
 | quote → paid conversion | 3.8% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 398,340 |
-| paid calls | 27,682 |
-| revenue | $1,058.98 |
-| average per day | $151.28 |
+| calls | 399,453 |
+| paid calls | 27,712 |
+| revenue | $1,059.03 |
+| average per day | $151.29 |
 
 ## Daily history
 
@@ -41,22 +41,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
 | 2026-08-22 | 35,072 | 13 | $40.85 | 42.6% | 1.64x |
 | 2026-08-23 | 37,311 | 7 | $0.78 | 90.8% | 2.37x |
 | 2026-08-24 | 32,977 | 893 | $105.54 | 36.9% | 1.85x |
-| 2026-08-25 | 14,597 | 343 | $33.20 | 77.3% | 0.89x |
+| 2026-08-25 | 15,710 | 373 | $33.25 | 77.1% | 0.91x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 1,779 |
-| `upstage/solar-pro4` | 1,770 |
-| `google/gemini-2.5-flash` | 1,762 |
-| `anthropic/claude-sonnet-4` | 1,752 |
-| `x-ai/grok-4.6` | 1,751 |
+| `openai/gpt-4o-mini` | 1,841 |
+| `upstage/solar-pro4` | 1,839 |
+| `google/gemini-2.5-flash` | 1,827 |
+| `anthropic/claude-sonnet-4` | 1,817 |
+| `x-ai/grok-4.6` | 1,814 |
 | `anthropic/claude-opus-5` | 215 |
 | `moonshotai/kimi-k3` | 210 |
-| `anthropic/claude-sonnet-5` | 99 |
-| `google/gemini-3.7-flash` | 70 |
-| `openai/gpt-5.6-luna` | 30 |
+| `anthropic/claude-sonnet-5` | 132 |
+| `google/gemini-3.7-flash` | 66 |
+| `ibm-granite/granite-4.0-h-micro` | 61 |
 
 ## Coverage
 
