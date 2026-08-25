@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-24`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 32,976 |
-| paid calls | 893 |
-| free calls | 7,991 |
-| revenue | $105.54 |
-| cost of goods | $52.41 |
-| margin | 50.3% |
-| buying direct would be | $195.27 |
-| **leCore saving** | **1.85x** |
-| distinct payers | 4 |
-| quote → paid conversion | 5.3% |
+| calls | 2,751 |
+| paid calls | 25 |
+| free calls | 576 |
+| revenue | $0.12 |
+| cost of goods | $0.11 |
+| margin | 10.6% |
+| buying direct would be | $0.15 |
+| **leCore saving** | **1.19x** |
+| distinct payers | 3 |
+| quote → paid conversion | 1.6% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 454,103 |
-| paid calls | 31,692 |
-| revenue | $1,772.69 |
-| average per day | $253.24 |
+| calls | 386,494 |
+| paid calls | 27,364 |
+| revenue | $1,025.90 |
+| average per day | $146.56 |
 
 ## Daily history
 
@@ -40,26 +40,27 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-24`
 | 2026-08-21 | 65,223 | 4,022 | $203.15 | 39.8% | 4.59x |
 | 2026-08-22 | 35,072 | 13 | $40.85 | 42.6% | 1.64x |
 | 2026-08-23 | 37,311 | 7 | $0.78 | 90.8% | 2.37x |
-| 2026-08-24 | 32,976 | 893 | $105.54 | 50.3% | 1.85x |
+| 2026-08-24 | 32,977 | 893 | $105.54 | 50.3% | 1.85x |
+| 2026-08-25 | 2,751 | 25 | $0.12 | 10.6% | 1.19x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `google/gemini-2.5-flash` | 2,257 |
-| `openai/gpt-4o-mini` | 1,685 |
-| `upstage/solar-pro4` | 1,685 |
-| `anthropic/claude-sonnet-4` | 1,679 |
-| `x-ai/grok-4.6` | 1,677 |
-| `anthropic/claude-fable-5` | 601 |
-| `anthropic/claude-opus-5` | 334 |
-| `openai/gpt-5.6-luna` | 123 |
-| `openai/gpt-5.6-sol` | 95 |
-| `moonshotai/kimi-k3` | 74 |
+| `openai/gpt-4o-mini` | 297 |
+| `google/gemini-2.5-flash` | 295 |
+| `upstage/solar-pro4` | 295 |
+| `anthropic/claude-sonnet-4` | 292 |
+| `x-ai/grok-4.6` | 291 |
+| `moonshotai/kimi-k3` | 210 |
+| `openai/gpt-5.6-luna` | 30 |
+| `google/gemini-3.7-flash` | 23 |
+| `anthropic/claude-sonnet-5` | 8 |
+| `nvidia/nemotron-3.5-lightning` | 4 |
 
 ## Coverage
 
-- days: 8, since 2026-08-17
+- days: 9, since 2026-08-17
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
