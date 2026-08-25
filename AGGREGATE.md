@@ -9,24 +9,24 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
 
 | metric | value |
 | --- | --- |
-| calls | 2,751 |
-| paid calls | 25 |
-| free calls | 576 |
-| revenue | $0.12 |
-| cost of goods | $0.11 |
-| margin | 10.6% |
-| buying direct would be | $0.15 |
-| **leCore saving** | **1.19x** |
+| calls | 4,701 |
+| paid calls | 39 |
+| free calls | 975 |
+| revenue | $0.14 |
+| cost of goods | $0.15 |
+| margin | 83.6% |
+| buying direct would be | $0.19 |
+| **leCore saving** | **1.34x** |
 | distinct payers | 3 |
-| quote → paid conversion | 1.6% |
+| quote → paid conversion | 1.4% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 386,494 |
-| paid calls | 27,364 |
-| revenue | $1,025.90 |
+| calls | 388,444 |
+| paid calls | 27,378 |
+| revenue | $1,025.92 |
 | average per day | $146.56 |
 
 ## Daily history
@@ -35,28 +35,28 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
 | --- | --- | --- | --- | --- | --- |
 | 2026-08-17 | 64,995 | 2,202 | $126.81 | 63.8% | 3.42x |
 | 2026-08-18 | 70,361 | 4,353 | $746.91 | 37.9% | 2.7x |
-| 2026-08-19 | 112,174 | 1,697 | $263.59 | 27.7% | 1.34x |
-| 2026-08-20 | 100,986 | 20,707 | $411.86 | 5.8% | 2.11x |
-| 2026-08-21 | 65,223 | 4,022 | $203.15 | 39.8% | 4.59x |
+| 2026-08-19 | 112,174 | 1,697 | $263.59 | 78.2% | 1.34x |
+| 2026-08-20 | 100,986 | 20,707 | $411.86 | 26.4% | 2.11x |
+| 2026-08-21 | 65,223 | 4,022 | $203.15 | 24.4% | 4.59x |
 | 2026-08-22 | 35,072 | 13 | $40.85 | 42.6% | 1.64x |
 | 2026-08-23 | 37,311 | 7 | $0.78 | 90.8% | 2.37x |
-| 2026-08-24 | 32,977 | 893 | $105.54 | 50.3% | 1.85x |
-| 2026-08-25 | 2,751 | 25 | $0.12 | 10.6% | 1.19x |
+| 2026-08-24 | 32,977 | 893 | $105.54 | 36.9% | 1.85x |
+| 2026-08-25 | 4,701 | 39 | $0.14 | 83.6% | 1.34x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 297 |
-| `google/gemini-2.5-flash` | 295 |
-| `upstage/solar-pro4` | 295 |
-| `anthropic/claude-sonnet-4` | 292 |
-| `x-ai/grok-4.6` | 291 |
+| `openai/gpt-4o-mini` | 542 |
+| `google/gemini-2.5-flash` | 539 |
+| `upstage/solar-pro4` | 539 |
+| `anthropic/claude-sonnet-4` | 535 |
+| `x-ai/grok-4.6` | 534 |
 | `moonshotai/kimi-k3` | 210 |
+| `google/gemini-3.7-flash` | 52 |
 | `openai/gpt-5.6-luna` | 30 |
-| `google/gemini-3.7-flash` | 23 |
-| `anthropic/claude-sonnet-5` | 8 |
-| `nvidia/nemotron-3.5-lightning` | 4 |
+| `anthropic/claude-sonnet-5` | 9 |
+| `nvidia/nemotron-3.5-lightning` | 5 |
 
 ## Coverage
 
