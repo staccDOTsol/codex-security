@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-26`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 37,250 |
-| paid calls | 1,157 |
-| free calls | 7,649 |
-| revenue | $265.82 |
-| cost of goods | $293.81 |
-| margin | 77.8% |
-| buying direct would be | $272.84 |
-| **leCore saving** | **1.03x** |
-| distinct payers | 7 |
-| quote → paid conversion | 5.3% |
+| calls | 2,400 |
+| paid calls | 40 |
+| free calls | 506 |
+| revenue | $4.62 |
+| cost of goods | $4.62 |
+| margin | 78.4% |
+| buying direct would be | $3.39 |
+| **leCore saving** | **0.73x** |
+| distinct payers | 1 |
+| quote → paid conversion | 2.6% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 420,993 |
-| paid calls | 28,496 |
-| revenue | $1,291.60 |
-| average per day | $184.51 |
+| calls | 311,388 |
+| paid calls | 26,839 |
+| revenue | $1,032.63 |
+| average per day | $147.52 |
 
 ## Daily history
 
@@ -41,26 +41,23 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-25`
 | 2026-08-22 | 35,072 | 13 | $40.85 | 42.6% | 1.64x |
 | 2026-08-23 | 37,311 | 7 | $0.78 | 90.8% | 2.37x |
 | 2026-08-24 | 32,977 | 893 | $105.54 | 36.9% | 1.85x |
-| 2026-08-25 | 37,250 | 1,157 | $265.82 | 77.8% | 1.03x |
+| 2026-08-25 | 37,419 | 1,157 | $265.82 | 77.8% | 1.03x |
+| 2026-08-26 | 2,400 | 40 | $4.62 | 78.4% | 0.73x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `upstage/solar-pro4` | 1,805 |
-| `anthropic/claude-sonnet-4` | 1,801 |
-| `openai/gpt-4o-mini` | 1,801 |
-| `x-ai/grok-4.6` | 1,801 |
-| `google/gemini-2.5-flash` | 1,800 |
-| `openai/gpt-5.6-sol` | 690 |
-| `openai/gpt-5.6-luna` | 412 |
-| `anthropic/claude-fable-5` | 119 |
-| `anthropic/claude-sonnet-5` | 77 |
-| `anthropic/claude-opus-5` | 65 |
+| `upstage/solar-pro4` | 295 |
+| `google/gemini-2.5-flash` | 295 |
+| `anthropic/claude-sonnet-4` | 294 |
+| `openai/gpt-4o-mini` | 294 |
+| `x-ai/grok-4.6` | 293 |
+| `openai/gpt-5.6-sol` | 63 |
 
 ## Coverage
 
-- days: 9, since 2026-08-17
+- days: 10, since 2026-08-17
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
