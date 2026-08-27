@@ -3,56 +3,54 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-26`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-27`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 29,695 |
-| paid calls | 172 |
-| free calls | 5,503 |
-| revenue | $3.40 |
-| cost of goods | $13.95 |
-| margin | 32.8% |
-| buying direct would be | $15.00 |
-| **leCore saving** | **4.41x** |
-| distinct payers | 5 |
-| quote → paid conversion | 0.9% |
+| calls | 4,735 |
+| paid calls | 2 |
+| free calls | 921 |
+| revenue | $0.01 |
+| cost of goods | $0.06 |
+| margin | 3.8% |
+| buying direct would be | $0.06 |
+| **leCore saving** | **4.81x** |
+| distinct payers | 2 |
+| quote → paid conversion | 0.1% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 29,695 |
-| paid calls | 172 |
-| revenue | $3.40 |
-| average per day | $3.40 |
+| calls | 37,782 |
+| paid calls | 245 |
+| revenue | $9.83 |
+| average per day | $4.92 |
 
 ## Daily history
 
 | day | calls | paid | revenue | margin | leCore saving |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-26 | 29,695 | 172 | $3.40 | 32.8% | 4.41x |
+| 2026-08-26 | 33,047 | 243 | $9.82 | 61.6% | 3.58x |
+| 2026-08-27 | 4,735 | 2 | $0.01 | 3.8% | 4.81x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `google/gemini-2.5-flash` | 1,962 |
-| `upstage/solar-pro4` | 1,960 |
-| `openai/gpt-4o-mini` | 1,959 |
-| `anthropic/claude-sonnet-4` | 1,958 |
-| `x-ai/grok-4.6` | 1,954 |
-| `qwen/qwen3.7-flash` | 34 |
-| `anthropic/claude-sonnet-5` | 17 |
-| `anthropic/claude-opus-5` | 14 |
-| `ibm-granite/granite-4.0-h-micro` | 4 |
-| `deepseek/deepseek-v4-pro-0813` | 4 |
+| `x-ai/grok-4.6` | 632 |
+| `upstage/solar-pro4` | 627 |
+| `google/gemini-2.5-flash` | 625 |
+| `anthropic/claude-sonnet-4` | 624 |
+| `openai/gpt-4o-mini` | 624 |
+| `deepseek/deepseek-v4-pro-0813` | 2 |
+| `x-ai/grok-4.3` | 2 |
 
 ## Coverage
 
-- days: 1, since 2026-08-26
+- days: 2, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
