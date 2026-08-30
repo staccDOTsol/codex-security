@@ -8,7 +8,7 @@
 >
 > <table><tr>
 > <td><img src="openzoo/cards/run-1787040139856.svg" width="420" alt="this repo's codex-security run"></td>
-> <td><img src="openzoo/cards/net-1788120228143.svg" width="420" alt="openzoo network today"></td>
+> <td><img src="openzoo/cards/net-1788129955490.svg" width="420" alt="openzoo network today"></td>
 > </tr></table>
 >
 > Pay per call from a wallet. **No OpenAI key, no org TPM ceiling, and no "you
