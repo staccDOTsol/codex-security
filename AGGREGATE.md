@@ -9,48 +9,50 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-08-30`
 
 | metric | value |
 | --- | --- |
-| calls | 104,375 |
-| paid calls | 166 |
-| free calls | 43,699 |
-| revenue | $4.29 |
-| cost of goods | $15.45 |
-| margin | -14.5% |
-| buying direct would be | $15.44 |
-| **leCore saving** | **3.6x** |
-| distinct payers | 5 |
-| quote → paid conversion | 0.8% |
+| calls | 174,768 |
+| paid calls | 1,058 |
+| free calls | 69,660 |
+| revenue | $24.86 |
+| cost of goods | $57.57 |
+| margin | 49.1% |
+| buying direct would be | $57.56 |
+| **leCore saving** | **2.32x** |
+| distinct payers | 9 |
+| quote → paid conversion | 2.8% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 337,360 |
-| paid calls | 2,618 |
-| revenue | $155.87 |
-| average per day | $31.17 |
+| calls | 411,150 |
+| paid calls | 3,700 |
+| revenue | $176.48 |
+| average per day | $35.30 |
 
 ## Daily history
 
 | day | calls | paid | revenue | margin | leCore saving |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-26 | 33,029 | 242 | $9.81 | 61.9% | 3.58x |
-| 2026-08-27 | 34,576 | 151 | $15.24 | 82.3% | 3.92x |
-| 2026-08-28 | 91,905 | 1,798 | $123.48 | 43% | 3.37x |
-| 2026-08-29 | 73,475 | 261 | $3.05 | 0.4% | 8.02x |
-| 2026-08-30 | 104,375 | 166 | $4.29 | -14.5% | 3.6x |
+| 2026-08-26 | 33,047 | 243 | $9.82 | 61.6% | 3.58x |
+| 2026-08-27 | 34,584 | 151 | $15.24 | 82.3% | 3.92x |
+| 2026-08-28 | 91,950 | 1,798 | $123.48 | 43% | 3.37x |
+| 2026-08-29 | 76,801 | 450 | $3.07 | 0.8% | 8.33x |
+| 2026-08-30 | 174,768 | 1,058 | $24.86 | 49.1% | 2.32x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 1,021 |
-| `openai/gpt-4o-mini` | 494 |
-| `google/gemini-2.5-flash` | 464 |
-| `upstage/solar-pro4` | 463 |
-| `anthropic/claude-sonnet-4` | 460 |
-| `anthropic/claude-sonnet-5` | 254 |
-| `z-ai/glm-5.3-flash` | 28 |
-| `nvidia/nemotron-3.5-lightning` | 7 |
+| `openai/gpt-4o-mini` | 9,511 |
+| `x-ai/grok-4.6` | 1,959 |
+| `upstage/solar-pro4` | 1,013 |
+| `google/gemini-2.5-flash` | 1,011 |
+| `anthropic/claude-sonnet-4` | 1,008 |
+| `anthropic/claude-sonnet-5` | 439 |
+| `z-ai/glm-5.3-flash` | 253 |
+| `nvidia/nemotron-3.5-lightning` | 244 |
+| `anthropic/claude-fable-5` | 12 |
+| `anthropic/claude-opus-5` | 1 |
 
 ## Coverage
 
