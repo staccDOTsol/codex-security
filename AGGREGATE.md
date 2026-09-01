@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-01`
 
 | metric | value |
 | --- | --- |
-| calls | 47,125 |
-| paid calls | 2,615 |
-| free calls | 10,012 |
-| revenue | $76.95 |
-| cost of goods | $187.05 |
-| margin | 64.9% |
-| buying direct would be | $185.66 |
-| **leCore saving** | **2.41x** |
-| distinct payers | 9 |
-| quote → paid conversion | 7.6% |
+| calls | 75,274 |
+| paid calls | 4,127 |
+| free calls | 12,353 |
+| revenue | $188.03 |
+| cost of goods | $503.50 |
+| margin | 57.7% |
+| buying direct would be | $502.11 |
+| **leCore saving** | **2.67x** |
+| distinct payers | 13 |
+| quote → paid conversion | 8.4% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 572,378 |
-| paid calls | 8,024 |
-| revenue | $289.05 |
-| average per day | $41.29 |
+| calls | 600,527 |
+| paid calls | 9,536 |
+| revenue | $400.13 |
+| average per day | $57.16 |
 
 ## Daily history
 
@@ -39,22 +39,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-01`
 | 2026-08-29 | 76,801 | 450 | $3.07 | 0.8% | 8.33x |
 | 2026-08-30 | 207,186 | 1,414 | $26.85 | 45.5% | 2.27x |
 | 2026-08-31 | 81,685 | 1,353 | $33.63 | 60.5% | 2.25x |
-| 2026-09-01 | 47,125 | 2,615 | $76.95 | 64.9% | 2.41x |
+| 2026-09-01 | 75,274 | 4,127 | $188.03 | 57.7% | 2.67x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 7,555 |
-| `x-ai/grok-4.6` | 3,857 |
-| `google/gemini-2.5-flash` | 1,797 |
-| `upstage/solar-pro4` | 1,511 |
-| `anthropic/claude-sonnet-4` | 1,509 |
-| `z-ai/glm-5.3-flash` | 348 |
+| `x-ai/grok-4.6` | 11,751 |
+| `openai/gpt-4o-mini` | 4,750 |
+| `google/gemini-2.5-flash` | 1,802 |
+| `upstage/solar-pro4` | 1,464 |
+| `anthropic/claude-sonnet-4` | 1,452 |
 | `Wan-AI/wan2.7-t2v` | 183 |
-| `black-forest-labs/FLUX.1.1-pro` | 180 |
-| `anthropic/claude-sonnet-5` | 96 |
-| `anthropic/claude-opus-5` | 84 |
+| `black-forest-labs/FLUX.1.1-pro` | 181 |
+| `anthropic/claude-opus-5` | 106 |
+| `anthropic/claude-sonnet-5` | 91 |
+| `tencent/hy4-preview` | 12 |
 
 ## Coverage
 
