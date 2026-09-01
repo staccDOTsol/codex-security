@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-01`
 
 | metric | value |
 | --- | --- |
-| calls | 87,495 |
-| paid calls | 5,556 |
-| free calls | 14,240 |
-| revenue | $235.55 |
-| cost of goods | $616.34 |
-| margin | 56.5% |
-| buying direct would be | $614.84 |
-| **leCore saving** | **2.61x** |
-| distinct payers | 13 |
-| quote → paid conversion | 9.8% |
+| calls | 107,003 |
+| paid calls | 8,551 |
+| free calls | 15,653 |
+| revenue | $436.92 |
+| cost of goods | $1,128.63 |
+| margin | 53.6% |
+| buying direct would be | $1,127.08 |
+| **leCore saving** | **2.58x** |
+| distinct payers | 20 |
+| quote → paid conversion | 12.6% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 612,748 |
-| paid calls | 10,965 |
-| revenue | $447.64 |
-| average per day | $63.95 |
+| calls | 632,256 |
+| paid calls | 13,960 |
+| revenue | $649.01 |
+| average per day | $92.72 |
 
 ## Daily history
 
@@ -39,22 +39,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-01`
 | 2026-08-29 | 76,801 | 450 | $3.07 | 0.8% | 8.33x |
 | 2026-08-30 | 207,186 | 1,414 | $26.85 | 45.5% | 2.27x |
 | 2026-08-31 | 81,685 | 1,353 | $33.63 | 60.5% | 2.25x |
-| 2026-09-01 | 87,495 | 5,556 | $235.55 | 56.5% | 2.61x |
+| 2026-09-01 | 107,003 | 8,551 | $436.92 | 53.6% | 2.58x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `x-ai/grok-4.6` | 7,501 |
-| `openai/gpt-4o-mini` | 5,052 |
-| `google/gemini-2.5-flash` | 1,843 |
-| `upstage/solar-pro4` | 1,429 |
-| `anthropic/claude-sonnet-4` | 1,423 |
-| `qwen/qwen3.8-flash` | 870 |
-| `openai/gpt-5.4-mini` | 762 |
-| `deepseek/deepseek-v4-flash-0731` | 257 |
-| `anthropic/claude-fable-5.1` | 255 |
-| `openai/gpt-4.1-mini` | 255 |
+| `x-ai/grok-4.6` | 11,549 |
+| `openai/gpt-4o-mini` | 6,317 |
+| `google/gemini-2.5-flash` | 1,867 |
+| `upstage/solar-pro4` | 1,424 |
+| `anthropic/claude-sonnet-4` | 1,393 |
+| `Wan-AI/wan2.7-t2v` | 191 |
+| `black-forest-labs/FLUX.1.1-pro` | 189 |
+| `deepseek/deepseek-v4-pro` | 178 |
+| `anthropic/claude-sonnet-5` | 108 |
+| `anthropic/claude-opus-5` | 106 |
 
 ## Coverage
 
