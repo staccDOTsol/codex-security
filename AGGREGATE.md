@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-02`
 
 | metric | value |
 | --- | --- |
-| calls | 22,531 |
-| paid calls | 567 |
-| free calls | 7,910 |
-| revenue | $28.05 |
-| cost of goods | $85.43 |
-| margin | 66.8% |
-| buying direct would be | $84.71 |
-| **leCore saving** | **3.02x** |
+| calls | 32,947 |
+| paid calls | 795 |
+| free calls | 9,744 |
+| revenue | $66.43 |
+| cost of goods | $148.36 |
+| margin | 65.9% |
+| buying direct would be | $146.51 |
+| **leCore saving** | **2.21x** |
 | distinct payers | 7 |
-| quote → paid conversion | 4.7% |
+| quote → paid conversion | 4% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 624,426 |
-| paid calls | 14,584 |
-| revenue | $675.90 |
-| average per day | $96.56 |
+| calls | 634,842 |
+| paid calls | 14,812 |
+| revenue | $714.28 |
+| average per day | $102.04 |
 
 ## Daily history
 
@@ -40,22 +40,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-02`
 | 2026-08-30 | 207,186 | 1,414 | $26.85 | 45.5% | 2.27x |
 | 2026-08-31 | 81,685 | 1,353 | $33.63 | 60.5% | 2.25x |
 | 2026-09-01 | 109,689 | 8,851 | $445.58 | 54% | 2.61x |
-| 2026-09-02 | 22,531 | 567 | $28.05 | 66.8% | 3.02x |
+| 2026-09-02 | 32,947 | 795 | $66.43 | 65.9% | 2.21x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 3,798 |
-| `x-ai/grok-4.6` | 1,749 |
-| `google/gemini-2.5-flash` | 1,136 |
-| `anthropic/claude-sonnet-4` | 958 |
-| `deepseek/deepseek-v4-flash` | 957 |
-| `anthropic/claude-sonnet-5` | 244 |
-| `abliterated-model-large-v2` | 122 |
-| `ByteDance/Seedance-2.0` | 119 |
+| `openai/gpt-4o-mini` | 4,871 |
+| `x-ai/grok-4.6` | 2,484 |
+| `google/gemini-2.5-flash` | 1,995 |
+| `anthropic/claude-sonnet-4` | 1,671 |
+| `deepseek/deepseek-v4-flash` | 1,670 |
+| `abliterated-model-large-v2` | 647 |
+| `anthropic/claude-sonnet-5` | 460 |
 | `anthropic/claude-fable-5.1` | 91 |
-| `google/veo-3.1` | 19 |
+| `nvidia/nemotron-3.5-lightning` | 19 |
+| `Wan-AI/wan2.7-t2v` | 11 |
 
 ## Coverage
 
