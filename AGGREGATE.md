@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-02`
 
 | metric | value |
 | --- | --- |
-| calls | 4,347 |
-| paid calls | 303 |
-| free calls | 831 |
-| revenue | $14.30 |
-| cost of goods | $55.39 |
-| margin | 77% |
-| buying direct would be | $55.27 |
-| **leCore saving** | **3.86x** |
-| distinct payers | 5 |
-| quote → paid conversion | 10.8% |
+| calls | 22,531 |
+| paid calls | 567 |
+| free calls | 7,910 |
+| revenue | $28.05 |
+| cost of goods | $85.43 |
+| margin | 66.8% |
+| buying direct would be | $84.71 |
+| **leCore saving** | **3.02x** |
+| distinct payers | 7 |
+| quote → paid conversion | 4.7% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 606,242 |
-| paid calls | 14,320 |
-| revenue | $662.15 |
-| average per day | $94.59 |
+| calls | 624,426 |
+| paid calls | 14,584 |
+| revenue | $675.90 |
+| average per day | $96.56 |
 
 ## Daily history
 
@@ -40,22 +40,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-02`
 | 2026-08-30 | 207,186 | 1,414 | $26.85 | 45.5% | 2.27x |
 | 2026-08-31 | 81,685 | 1,353 | $33.63 | 60.5% | 2.25x |
 | 2026-09-01 | 109,689 | 8,851 | $445.58 | 54% | 2.61x |
-| 2026-09-02 | 4,347 | 303 | $14.30 | 77% | 3.86x |
+| 2026-09-02 | 22,531 | 567 | $28.05 | 66.8% | 3.02x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 1,152 |
-| `x-ai/grok-4.6` | 1,063 |
-| `google/gemini-2.5-flash` | 400 |
-| `anthropic/claude-sonnet-4` | 357 |
-| `upstage/solar-pro4` | 295 |
-| `deepseek/deepseek-v4-flash` | 71 |
-| `anthropic/claude-sonnet-5` | 59 |
-| `anthropic/claude-fable-5.1` | 38 |
-| `black-forest-labs/FLUX.1.1-pro` | 3 |
-| `Wan-AI/wan2.7-t2v` | 3 |
+| `openai/gpt-4o-mini` | 3,798 |
+| `x-ai/grok-4.6` | 1,749 |
+| `google/gemini-2.5-flash` | 1,136 |
+| `anthropic/claude-sonnet-4` | 958 |
+| `deepseek/deepseek-v4-flash` | 957 |
+| `anthropic/claude-sonnet-5` | 244 |
+| `abliterated-model-large-v2` | 122 |
+| `ByteDance/Seedance-2.0` | 119 |
+| `anthropic/claude-fable-5.1` | 91 |
+| `google/veo-3.1` | 19 |
 
 ## Coverage
 
