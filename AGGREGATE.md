@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-02`
 
 | metric | value |
 | --- | --- |
-| calls | 49,112 |
-| paid calls | 1,094 |
-| free calls | 12,164 |
-| revenue | $104.84 |
-| cost of goods | $196.49 |
-| margin | 82.7% |
-| buying direct would be | $307.73 |
-| **leCore saving** | **2.94x** |
-| distinct payers | 11 |
-| quote → paid conversion | 3.5% |
+| calls | 54,841 |
+| paid calls | 1,153 |
+| free calls | 13,081 |
+| revenue | $106.56 |
+| cost of goods | $199.09 |
+| margin | 82.3% |
+| buying direct would be | $311.21 |
+| **leCore saving** | **2.92x** |
+| distinct payers | 12 |
+| quote → paid conversion | 3.2% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 651,007 |
-| paid calls | 15,111 |
-| revenue | $752.69 |
-| average per day | $107.53 |
+| calls | 656,736 |
+| paid calls | 15,170 |
+| revenue | $754.41 |
+| average per day | $107.77 |
 
 ## Daily history
 
@@ -40,22 +40,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-02`
 | 2026-08-30 | 207,186 | 1,414 | $26.85 | 45.5% | 2.27x |
 | 2026-08-31 | 81,685 | 1,353 | $33.63 | 60.5% | 2.25x |
 | 2026-09-01 | 109,689 | 8,851 | $445.58 | 54% | 2.61x |
-| 2026-09-02 | 49,112 | 1,094 | $104.84 | 82.7% | 2.94x |
+| 2026-09-02 | 54,841 | 1,153 | $106.56 | 82.3% | 2.92x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `openai/gpt-4o-mini` | 5,420 |
-| `x-ai/grok-4.6` | 2,661 |
-| `google/gemini-2.5-flash` | 2,191 |
-| `deepseek/deepseek-v4-flash` | 1,670 |
-| `anthropic/claude-sonnet-4` | 1,670 |
-| `anthropic/claude-sonnet-5` | 686 |
-| `abliterated-model-large-v2` | 644 |
-| `deepseek/deepseek-v4-pro-0813` | 248 |
-| `openai/gpt-5.6-sol-pro` | 180 |
-| `x-ai/grok-4.3` | 156 |
+| `openai/gpt-4o-mini` | 5,826 |
+| `x-ai/grok-4.6` | 2,710 |
+| `google/gemini-2.5-flash` | 2,311 |
+| `anthropic/claude-sonnet-4` | 1,720 |
+| `deepseek/deepseek-v4-flash` | 1,719 |
+| `anthropic/claude-sonnet-5` | 787 |
+| `abliterated-model-large-v2` | 662 |
+| `deepseek/deepseek-v4-pro-0813` | 243 |
+| `openai/gpt-5.6-sol-pro` | 178 |
+| `x-ai/grok-4.3` | 106 |
 
 ## Coverage
 
