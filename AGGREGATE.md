@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-03`
 
 | metric | value |
 | --- | --- |
-| calls | 43,125 |
-| paid calls | 2,419 |
-| free calls | 5,129 |
-| revenue | $216.99 |
-| cost of goods | $411.12 |
-| margin | 48% |
-| buying direct would be | $414.14 |
-| **leCore saving** | **1.91x** |
-| distinct payers | 13 |
-| quote → paid conversion | 9.3% |
+| calls | 54,480 |
+| paid calls | 2,720 |
+| free calls | 6,338 |
+| revenue | $224.85 |
+| cost of goods | $427.46 |
+| margin | 42.2% |
+| buying direct would be | $431.39 |
+| **leCore saving** | **1.92x** |
+| distinct payers | 16 |
+| quote → paid conversion | 8.6% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 669,877 |
-| paid calls | 17,455 |
-| revenue | $956.23 |
-| average per day | $136.60 |
+| calls | 681,232 |
+| paid calls | 17,756 |
+| revenue | $964.08 |
+| average per day | $137.73 |
 
 ## Daily history
 
@@ -41,22 +41,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-03`
 | 2026-08-31 | 81,685 | 1,353 | $33.63 | 60.5% | 2.25x |
 | 2026-09-01 | 109,689 | 8,851 | $445.58 | 54% | 2.61x |
 | 2026-09-02 | 59,441 | 1,170 | $106.63 | 82.2% | 2.92x |
-| 2026-09-03 | 43,125 | 2,419 | $216.99 | 48% | 1.91x |
+| 2026-09-03 | 54,480 | 2,720 | $224.85 | 42.2% | 1.92x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `gpt-4o-mini` | 6,776 |
-| `openai/gpt-4o-mini` | 5,454 |
-| `abliterated-model-large-v2` | 2,630 |
-| `deepseek/deepseek-v4-flash` | 1,907 |
-| `gemini-2.5-flash` | 1,765 |
-| `grok-4.6` | 1,750 |
-| `claude-sonnet-5` | 702 |
-| `moonshotai/kimi-k3` | 614 |
-| `google/gemini-2.5-flash` | 444 |
-| `anthropic/claude-sonnet-5` | 258 |
+| `gpt-4o-mini` | 9,051 |
+| `openai/gpt-4o-mini` | 5,204 |
+| `abliterated-model-large-v2` | 2,554 |
+| `deepseek/deepseek-v4-flash` | 1,896 |
+| `gemini-2.5-flash` | 1,651 |
+| `grok-4.6` | 1,629 |
+| `claude-sonnet-5` | 1,144 |
+| `deepseek/deepseek-v4-flash-0731` | 609 |
+| `moonshotai/kimi-k3` | 596 |
+| `google/gemini-2.5-flash` | 442 |
 
 ## Coverage
 
