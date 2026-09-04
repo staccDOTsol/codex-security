@@ -9,25 +9,25 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-04`
 
 | metric | value |
 | --- | --- |
-| calls | 24,993 |
-| paid calls | 171 |
-| free calls | 6,231 |
-| revenue | $1.53 |
-| cost of goods | $6.15 |
-| margin | 17.8% |
-| buying direct would be | $5.19 |
-| **leCore saving** | **3.39x** |
-| distinct payers | 10 |
-| quote → paid conversion | 1.1% |
+| calls | 28,333 |
+| paid calls | 249 |
+| free calls | 7,077 |
+| revenue | $1.98 |
+| cost of goods | $7.31 |
+| margin | 17.1% |
+| buying direct would be | $6.13 |
+| **leCore saving** | **3.1x** |
+| distinct payers | 12 |
+| quote → paid conversion | 1.4% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 626,962 |
-| paid calls | 16,203 |
-| revenue | $848.80 |
-| average per day | $121.26 |
+| calls | 630,302 |
+| paid calls | 16,281 |
+| revenue | $849.25 |
+| average per day | $121.32 |
 
 ## Daily history
 
@@ -42,22 +42,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-04`
 | 2026-09-01 | 109,689 | 8,851 | $445.58 | 54% | 2.61x |
 | 2026-09-02 | 59,441 | 1,170 | $106.63 | 82.2% | 2.92x |
 | 2026-09-03 | 67,167 | 2,794 | $231.51 | 33.7% | 1.92x |
-| 2026-09-04 | 24,993 | 171 | $1.53 | 17.8% | 3.39x |
+| 2026-09-04 | 28,333 | 249 | $1.98 | 17.1% | 3.1x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `gpt-4o-mini` | 4,518 |
-| `grok-4.6` | 2,052 |
-| `gemini-2.5-flash` | 1,579 |
-| `deepseek/deepseek-v4-flash` | 1,538 |
-| `openai/gpt-4o-mini` | 817 |
-| `claude-sonnet-5` | 687 |
-| `google/gemini-2.5-flash` | 548 |
+| `gpt-4o-mini` | 4,458 |
+| `grok-4.6` | 1,999 |
+| `openai/gpt-4o-mini` | 1,710 |
+| `gemini-2.5-flash` | 1,523 |
+| `deepseek/deepseek-v4-flash` | 1,473 |
+| `claude-sonnet-5` | 842 |
+| `google/gemini-2.5-flash` | 632 |
+| `grok-4.5` | 39 |
+| `deepseek-v4-flash` | 21 |
 | `black-forest-labs/FLUX.1.1-pro` | 12 |
-| `Wan-AI/wan2.7-t2v` | 12 |
-| `gemma-3-27b-it` | 12 |
 
 ## Coverage
 
