@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-06`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-07`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 33,047 |
-| paid calls | 560 |
-| free calls | 11,538 |
-| revenue | $53.62 |
-| cost of goods | $211.60 |
-| margin | 5.4% |
-| buying direct would be | $121.68 |
-| **leCore saving** | **2.27x** |
-| distinct payers | 6 |
-| quote → paid conversion | 3% |
+| calls | 5,127 |
+| paid calls | 1,030 |
+| free calls | 849 |
+| revenue | $15.47 |
+| cost of goods | $50.93 |
+| margin | -426.1% |
+| buying direct would be | $23.32 |
+| **leCore saving** | **1.51x** |
+| distinct payers | 1 |
+| quote → paid conversion | 34.4% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 419,717 |
-| paid calls | 15,625 |
-| revenue | $885.16 |
-| average per day | $126.45 |
+| calls | 345,450 |
+| paid calls | 15,754 |
+| revenue | $876.28 |
+| average per day | $125.18 |
 
 ## Daily history
 
@@ -44,26 +44,27 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-06`
 | 2026-09-03 | 67,167 | 2,794 | $231.51 | 33.7% | 1.92x |
 | 2026-09-04 | 32,747 | 542 | $3.76 | -168.5% | 2.38x |
 | 2026-09-05 | 35,941 | 355 | $10.43 | 3.4% | 2.5x |
-| 2026-09-06 | 33,047 | 560 | $53.62 | 5.4% | 2.27x |
+| 2026-09-06 | 35,338 | 1,012 | $62.90 | -7% | 2.15x |
+| 2026-09-07 | 5,127 | 1,030 | $15.47 | -426.1% | 1.51x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-fable-5` | 3,495 |
-| `gemini-2.5-flash` | 1,496 |
-| `deepseek/deepseek-v4-flash` | 1,475 |
-| `gpt-4o-mini` | 1,470 |
-| `grok-4.6` | 1,466 |
-| `claude-opus-5` | 786 |
-| `google/gemini-2.5-flash` | 526 |
-| `claude-sonnet-5` | 372 |
-| `claude-fable-5.1` | 130 |
-| `qwen/qwen-2.5-7b-instruct` | 119 |
+| `gpt-4o-mini` | 2,441 |
+| `qwen/qwen-2.5-7b-instruct` | 572 |
+| `claude-opus-5` | 309 |
+| `claude-sonnet-5` | 200 |
+| `claude-fable-5` | 156 |
+| `deepseek/deepseek-v4-flash` | 151 |
+| `gemini-2.5-flash` | 150 |
+| `grok-4.6` | 148 |
+| `claude-fable-5.1` | 96 |
+| `google/gemini-2.5-flash` | 25 |
 
 ## Coverage
 
-- days: 12, since 2026-08-26
+- days: 13, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
