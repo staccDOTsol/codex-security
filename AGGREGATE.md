@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-12`
 
 | metric | value |
 | --- | --- |
-| calls | 5,817 |
+| calls | 6,466 |
 | paid calls | 4 |
-| free calls | 33 |
+| free calls | 38 |
 | revenue | $0.10 |
 | cost of goods | $0.37 |
 | margin | 8.1% |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-12`
 
 | metric | value |
 | --- | --- |
-| calls | 130,980 |
+| calls | 131,629 |
 | paid calls | 3,109 |
 | revenue | $320.51 |
 | average per day | $45.79 |
@@ -50,13 +50,13 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-12`
 | 2026-09-09 | 36,874 | 1,013 | $241.10 | 69.4% | 3.76x |
 | 2026-09-10 | 4,920 | 4 | $0.01 | -23.9% | 7.17x |
 | 2026-09-11 | 2,829 | 14 | $0.80 | 22.4% | 2.15x |
-| 2026-09-12 | 5,817 | 4 | $0.10 | 8.1% | 2.09x |
+| 2026-09-12 | 6,466 | 4 | $0.10 | 8.1% | 2.09x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 5,196 |
+| `claude-sonnet-5` | 5,840 |
 | `gpt-4o-mini` | 156 |
 | `deepseek/deepseek-v4-flash` | 108 |
 | `deepseek-chat` | 102 |
