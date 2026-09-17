@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-17`
 
 | metric | value |
 | --- | --- |
-| calls | 2,185 |
+| calls | 2,705 |
 | paid calls | 0 |
-| free calls | 40 |
+| free calls | 75 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-17`
 
 | metric | value |
 | --- | --- |
-| calls | 34,825 |
+| calls | 35,345 |
 | paid calls | 623 |
 | revenue | $53.71 |
 | average per day | $7.67 |
@@ -55,13 +55,13 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-17`
 | 2026-09-14 | 6,438 | 40 | $1.71 | -39.5% | 2.06x |
 | 2026-09-15 | 4,026 | 0 | $0.0000 | — | — |
 | 2026-09-16 | 3,479 | 0 | $0.0000 | — | — |
-| 2026-09-17 | 2,185 | 0 | $0.0000 | — | — |
+| 2026-09-17 | 2,705 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 1,858 |
+| `claude-sonnet-5` | 2,340 |
 | `qwen/qwen-2.5-7b-instruct` | 108 |
 | `gemini-3-6-flash` | 54 |
 | `grok-4.6` | 54 |
