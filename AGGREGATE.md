@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-17`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-18`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 3,220 |
+| calls | 46 |
 | paid calls | 0 |
-| free calls | 104 |
+| free calls | 0 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
 | buying direct would be | $0.0000 |
 | **leCore saving** | **—** |
-| distinct payers | 1 |
+| distinct payers | 0 |
 | quote → paid conversion | 0% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 35,860 |
-| paid calls | 623 |
-| revenue | $53.71 |
-| average per day | $7.67 |
+| calls | 33,306 |
+| paid calls | 609 |
+| revenue | $52.91 |
+| average per day | $7.56 |
 
 ## Daily history
 
@@ -55,21 +55,18 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-17`
 | 2026-09-14 | 6,438 | 40 | $1.71 | -39.5% | 2.06x |
 | 2026-09-15 | 4,026 | 0 | $0.0000 | — | — |
 | 2026-09-16 | 3,479 | 0 | $0.0000 | — | — |
-| 2026-09-17 | 3,220 | 0 | $0.0000 | — | — |
+| 2026-09-17 | 3,449 | 0 | $0.0000 | — | — |
+| 2026-09-18 | 46 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 2,734 |
-| `qwen/qwen-2.5-7b-instruct` | 144 |
-| `gemini-3-6-flash` | 72 |
-| `grok-4.6` | 72 |
-| `deepseek-v4-pro` | 72 |
+| `claude-sonnet-5` | 46 |
 
 ## Coverage
 
-- days: 23, since 2026-08-26
+- days: 24, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
