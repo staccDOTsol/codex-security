@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-19`
 
 | metric | value |
 | --- | --- |
-| calls | 3,106 |
+| calls | 3,117 |
 | paid calls | 28 |
-| free calls | 71 |
+| free calls | 80 |
 | revenue | $0.32 |
 | cost of goods | $0.68 |
 | margin | -48.6% |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-19`
 
 | metric | value |
 | --- | --- |
-| calls | 31,960 |
+| calls | 31,971 |
 | paid calls | 633 |
 | revenue | $53.13 |
 | average per day | $7.59 |
@@ -57,7 +57,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-19`
 | 2026-09-16 | 3,479 | 0 | $0.0000 | — | — |
 | 2026-09-17 | 3,449 | 0 | $0.0000 | — | — |
 | 2026-09-18 | 3,460 | 0 | $0.0000 | — | — |
-| 2026-09-19 | 3,106 | 28 | $0.32 | -48.6% | 1.58x |
+| 2026-09-19 | 3,117 | 28 | $0.32 | -48.6% | 1.58x |
 
 ## Top models
 
