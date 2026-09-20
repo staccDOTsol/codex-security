@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-19`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-20`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 3,117 |
-| paid calls | 28 |
-| free calls | 80 |
-| revenue | $0.32 |
-| cost of goods | $0.68 |
-| margin | -48.6% |
-| buying direct would be | $0.50 |
-| **leCore saving** | **1.58x** |
-| distinct payers | 7 |
-| quote → paid conversion | 1.9% |
+| calls | 5 |
+| paid calls | 0 |
+| free calls | 2 |
+| revenue | $0.0000 |
+| cost of goods | $0.0000 |
+| margin | — |
+| buying direct would be | $0.0000 |
+| **leCore saving** | **—** |
+| distinct payers | 0 |
+| quote → paid conversion | — |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 31,971 |
-| paid calls | 633 |
-| revenue | $53.13 |
-| average per day | $7.59 |
+| calls | 23,977 |
+| paid calls | 68 |
+| revenue | $2.03 |
+| average per day | $0.29 |
 
 ## Daily history
 
@@ -57,25 +57,12 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-19`
 | 2026-09-16 | 3,479 | 0 | $0.0000 | — | — |
 | 2026-09-17 | 3,449 | 0 | $0.0000 | — | — |
 | 2026-09-18 | 3,460 | 0 | $0.0000 | — | — |
-| 2026-09-19 | 3,117 | 28 | $0.32 | -48.6% | 1.58x |
-
-## Top models
-
-| model | calls |
-| --- | --- |
-| `claude-sonnet-5` | 2,637 |
-| `openai/gpt-oss-120b` | 108 |
-| `gemini-3-6-flash` | 72 |
-| `deepseek-v4-pro` | 72 |
-| `grok-4.6` | 54 |
-| `deepseek/deepseek-v4-flash` | 36 |
-| `gemini-2.5-flash` | 16 |
-| `gpt-4o-mini` | 3 |
-| `abliterated-model` | 2 |
+| 2026-09-19 | 3,120 | 28 | $0.32 | -48.6% | 1.58x |
+| 2026-09-20 | 5 | 0 | $0.0000 | — | — |
 
 ## Coverage
 
-- days: 25, since 2026-08-26
+- days: 26, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
