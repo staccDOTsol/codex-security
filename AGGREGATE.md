@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-20`
 
 | metric | value |
 | --- | --- |
-| calls | 67 |
+| calls | 110 |
 | paid calls | 0 |
-| free calls | 11 |
+| free calls | 17 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-20`
 
 | metric | value |
 | --- | --- |
-| calls | 24,039 |
+| calls | 24,082 |
 | paid calls | 68 |
 | revenue | $2.03 |
 | average per day | $0.29 |
@@ -58,14 +58,14 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-20`
 | 2026-09-17 | 3,449 | 0 | $0.0000 | — | — |
 | 2026-09-18 | 3,460 | 0 | $0.0000 | — | — |
 | 2026-09-19 | 3,120 | 28 | $0.32 | -48.6% | 1.58x |
-| 2026-09-20 | 67 | 0 | $0.0000 | — | — |
+| 2026-09-20 | 110 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `gemini-3-6-flash` | 18 |
-| `deepseek-v4-pro` | 18 |
+| `gemini-3-6-flash` | 36 |
+| `deepseek-v4-pro` | 36 |
 
 ## Coverage
 
