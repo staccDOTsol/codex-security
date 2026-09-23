@@ -3,31 +3,31 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-22`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-23`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 7,334 |
-| paid calls | 869 |
-| free calls | 78 |
-| revenue | $184.30 |
-| cost of goods | $812.31 |
-| margin | 78.1% |
-| buying direct would be | $756.23 |
-| **leCore saving** | **4.1x** |
-| distinct payers | 2 |
-| quote → paid conversion | 24.5% |
+| calls | 2,516 |
+| paid calls | 566 |
+| free calls | 2 |
+| revenue | $211.14 |
+| cost of goods | $685.52 |
+| margin | 46.5% |
+| buying direct would be | $627.37 |
+| **leCore saving** | **2.97x** |
+| distinct payers | 1 |
+| quote → paid conversion | 37.9% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 24,874 |
-| paid calls | 909 |
-| revenue | $184.72 |
-| average per day | $26.39 |
+| calls | 24,299 |
+| paid calls | 1,514 |
+| revenue | $404.04 |
+| average per day | $57.72 |
 
 ## Daily history
 
@@ -60,26 +60,19 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-22`
 | 2026-09-19 | 3,120 | 28 | $0.32 | -48.6% | 1.58x |
 | 2026-09-20 | 675 | 8 | $0.07 | 50.5% | 2.92x |
 | 2026-09-21 | 3,357 | 4 | $0.03 | 60% | 3.4x |
-| 2026-09-22 | 7,334 | 869 | $184.30 | 78.1% | 4.1x |
+| 2026-09-22 | 7,722 | 908 | $192.48 | 78.4% | 4.12x |
+| 2026-09-23 | 2,516 | 566 | $211.14 | 46.5% | 2.97x |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `gpt-6-astra` | 3,379 |
-| `claude-sonnet-5` | 3,258 |
-| `abliterated-model` | 243 |
-| `openai/gpt-oss-120b` | 72 |
-| `gemini-3-6-flash` | 72 |
-| `grok-4.6` | 72 |
-| `deepseek-v4-pro` | 72 |
-| `deepseek/deepseek-v4-flash` | 36 |
-| `gpt-5.2-codex` | 8 |
-| `qwen/qwen3.7-flash` | 2 |
+| `gpt-6-astra` | 2,161 |
+| `claude-sonnet-5` | 346 |
 
 ## Coverage
 
-- days: 28, since 2026-08-26
+- days: 29, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
