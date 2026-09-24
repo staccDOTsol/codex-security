@@ -3,28 +3,28 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-23`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-24`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 13,170 |
-| paid calls | 778 |
-| free calls | 58 |
-| revenue | $296.94 |
-| cost of goods | $884.17 |
-| margin | 44.3% |
-| buying direct would be | $857.25 |
-| **leCore saving** | **2.89x** |
-| distinct payers | 2 |
-| quote → paid conversion | 11.5% |
+| calls | 179 |
+| paid calls | 0 |
+| free calls | 2 |
+| revenue | $0.0000 |
+| cost of goods | $0.0000 |
+| margin | — |
+| buying direct would be | $0.0000 |
+| **leCore saving** | **—** |
+| distinct payers | 0 |
+| quote → paid conversion | 0% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 34,953 |
+| calls | 31,782 |
 | paid calls | 1,726 |
 | revenue | $489.85 |
 | average per day | $69.98 |
@@ -61,23 +61,18 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-23`
 | 2026-09-20 | 675 | 8 | $0.07 | 50.5% | 2.92x |
 | 2026-09-21 | 3,357 | 4 | $0.03 | 60% | 3.4x |
 | 2026-09-22 | 7,722 | 908 | $192.48 | 78.4% | 4.12x |
-| 2026-09-23 | 13,170 | 778 | $296.94 | 44.3% | 2.89x |
+| 2026-09-23 | 13,269 | 778 | $296.94 | 44.3% | 2.89x |
+| 2026-09-24 | 179 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `gpt-6-astra` | 8,388 |
-| `claude-sonnet-5` | 4,346 |
-| `deepseek/deepseek-v4-flash` | 108 |
-| `gemini-3-6-flash` | 72 |
-| `grok-4.6` | 72 |
-| `deepseek-v4-pro` | 72 |
-| `openai/gpt-oss-120b` | 36 |
+| `claude-sonnet-5` | 174 |
 
 ## Coverage
 
-- days: 29, since 2026-08-26
+- days: 30, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
