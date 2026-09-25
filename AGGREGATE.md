@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-25`
 
 | metric | value |
 | --- | --- |
-| calls | 1,811 |
+| calls | 2,528 |
 | paid calls | 0 |
-| free calls | 18 |
+| free calls | 26 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-25`
 
 | metric | value |
 | --- | --- |
-| calls | 33,219 |
+| calls | 33,936 |
 | paid calls | 1,726 |
 | revenue | $489.85 |
 | average per day | $69.98 |
@@ -63,18 +63,18 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-25`
 | 2026-09-22 | 7,722 | 908 | $192.48 | 78.4% | 4.12x |
 | 2026-09-23 | 13,269 | 778 | $296.94 | 44.3% | 2.89x |
 | 2026-09-24 | 3,265 | 0 | $0.0000 | — | — |
-| 2026-09-25 | 1,811 | 0 | $0.0000 | — | — |
+| 2026-09-25 | 2,528 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 1,596 |
+| `claude-sonnet-5` | 2,208 |
+| `deepseek/deepseek-v4-flash` | 72 |
+| `gemini-3-6-flash` | 54 |
+| `grok-4.6` | 54 |
+| `deepseek-v4-pro` | 54 |
 | `openai/gpt-oss-120b` | 36 |
-| `gemini-3-6-flash` | 36 |
-| `grok-4.6` | 36 |
-| `deepseek-v4-pro` | 36 |
-| `deepseek/deepseek-v4-flash` | 36 |
 
 ## Coverage
 
