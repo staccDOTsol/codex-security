@@ -9,9 +9,9 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-28`
 
 | metric | value |
 | --- | --- |
-| calls | 1,595 |
+| calls | 2,609 |
 | paid calls | 0 |
-| free calls | 10 |
+| free calls | 22 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
@@ -24,7 +24,7 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-28`
 
 | metric | value |
 | --- | --- |
-| calls | 35,969 |
+| calls | 36,983 |
 | paid calls | 1,686 |
 | revenue | $489.42 |
 | average per day | $69.92 |
@@ -66,17 +66,18 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-09-28`
 | 2026-09-25 | 3,383 | 0 | $0.0000 | — | — |
 | 2026-09-26 | 3,354 | 0 | $0.0000 | — | — |
 | 2026-09-27 | 3,381 | 0 | $0.0000 | — | — |
-| 2026-09-28 | 1,595 | 0 | $0.0000 | — | — |
+| 2026-09-28 | 2,609 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 1,386 |
+| `claude-sonnet-5` | 2,296 |
 | `deepseek/deepseek-v4-flash` | 72 |
-| `gemini-3-6-flash` | 36 |
-| `grok-4.6` | 36 |
-| `deepseek-v4-pro` | 36 |
+| `gemini-3-6-flash` | 54 |
+| `grok-4.6` | 54 |
+| `deepseek-v4-pro` | 54 |
+| `mistralai/mistral-nemo` | 36 |
 
 ## Coverage
 
