@@ -3,28 +3,28 @@
 _Everyone's traffic through the gateway, not just this repo's scan. For our own_
 _run see [STATS.md](STATS.md). Refreshed by `.github/workflows/openzoo-stats.yml`._
 
-Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-10-03`
+Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-10-04`
 
 ## Today
 
 | metric | value |
 | --- | --- |
-| calls | 3,068 |
+| calls | 10 |
 | paid calls | 0 |
-| free calls | 27 |
+| free calls | 0 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
 | buying direct would be | $0.0000 |
 | **leCore saving** | **—** |
-| distinct payers | 1 |
+| distinct payers | 0 |
 | quote → paid conversion | 0% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 22,740 |
+| calls | 19,652 |
 | paid calls | 0 |
 | revenue | $0.0000 |
 | average per day | $0.0000 |
@@ -71,25 +71,18 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-10-03`
 | 2026-09-30 | 3,360 | 0 | $0.0000 | — | — |
 | 2026-10-01 | 3,360 | 0 | $0.0000 | — | — |
 | 2026-10-02 | 3,352 | 0 | $0.0000 | — | — |
-| 2026-10-03 | 3,068 | 0 | $0.0000 | — | — |
+| 2026-10-03 | 3,351 | 0 | $0.0000 | — | — |
+| 2026-10-04 | 10 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 2,672 |
-| `openai/gpt-oss-120b` | 72 |
-| `gemini-3-6-flash` | 72 |
-| `grok-4.6` | 72 |
-| `deepseek-v4-pro` | 72 |
-| `deepseek/deepseek-v4-flash` | 36 |
-| `mistralai/mistral-nemo` | 36 |
-| `claude-sonnet-5.5` | 2 |
-| `meta-llama/llama-3.1-8b-instruct` | 2 |
+| `claude-sonnet-5` | 10 |
 
 ## Coverage
 
-- days: 39, since 2026-08-26
+- days: 40, since 2026-08-26
 - daily rows are folded from live events and persisted to the machine volume; history starts the day this rollup shipped and is never backfilled
 - identifying data: none — payer counts are distinct 8-char prefixes, never full addresses or IPs
 
