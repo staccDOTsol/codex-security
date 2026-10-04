@@ -9,22 +9,22 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-10-04`
 
 | metric | value |
 | --- | --- |
-| calls | 10 |
+| calls | 835 |
 | paid calls | 0 |
-| free calls | 0 |
+| free calls | 5 |
 | revenue | $0.0000 |
 | cost of goods | $0.0000 |
 | margin | — |
 | buying direct would be | $0.0000 |
 | **leCore saving** | **—** |
-| distinct payers | 0 |
+| distinct payers | 1 |
 | quote → paid conversion | 0% |
 
 ## Trailing 7 days
 
 | metric | value |
 | --- | --- |
-| calls | 19,652 |
+| calls | 20,477 |
 | paid calls | 0 |
 | revenue | $0.0000 |
 | average per day | $0.0000 |
@@ -72,13 +72,17 @@ Source: `https://x402-tokens.fly.dev/v1/stats` · day `2026-10-04`
 | 2026-10-01 | 3,360 | 0 | $0.0000 | — | — |
 | 2026-10-02 | 3,352 | 0 | $0.0000 | — | — |
 | 2026-10-03 | 3,351 | 0 | $0.0000 | — | — |
-| 2026-10-04 | 10 | 0 | $0.0000 | — | — |
+| 2026-10-04 | 835 | 0 | $0.0000 | — | — |
 
 ## Top models
 
 | model | calls |
 | --- | --- |
-| `claude-sonnet-5` | 10 |
+| `claude-sonnet-5` | 732 |
+| `sao10k/l3-lunaris-8b` | 36 |
+| `gemini-3-6-flash` | 18 |
+| `grok-4.6` | 18 |
+| `deepseek-v4-pro` | 18 |
 
 ## Coverage
 
